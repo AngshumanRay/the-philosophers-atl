@@ -164,12 +164,6 @@ function PhilosopherDetail({ philosopher, onBack }: PhilosopherDetailProps) {
                   <CardTitle className="font-display text-xl">
                     {philosopherTopics.find(t => t.id === selectedTopic)?.title}
                   </CardTitle>
-                  <Badge variant={
-                    philosopher.topics[selectedTopic].difficulty === 'beginner' ? 'secondary' :
-                    philosopher.topics[selectedTopic].difficulty === 'intermediate' ? 'default' : 'destructive'
-                  }>
-                    {philosopher.topics[selectedTopic].difficulty}
-                  </Badge>
                 </div>
                 <CardDescription className="font-reading">
                   {philosopherTopics.find(t => t.id === selectedTopic)?.description}

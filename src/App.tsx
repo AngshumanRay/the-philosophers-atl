@@ -91,7 +91,7 @@ function HomeView({ onNavigate }: HomeViewProps) {
           <CardContent>
             <div className="flex flex-wrap gap-2">
               <Badge variant="secondary">{topics.length} Topics</Badge>
-              <Badge variant="outline">All Difficulty Levels</Badge>
+              <Badge variant="outline">Essential Questions</Badge>
             </div>
           </CardContent>
         </Card>
@@ -166,12 +166,6 @@ function HomeView({ onNavigate }: HomeViewProps) {
               <div key={topic.id} className="p-3 rounded-lg hover:bg-muted/50 transition-colors">
                 <div className="flex items-center justify-between mb-2">
                   <h4 className="font-display font-medium">{topic.title}</h4>
-                  <Badge variant={
-                    topic.difficulty === 'beginner' ? 'secondary' : 
-                    topic.difficulty === 'intermediate' ? 'default' : 'destructive'
-                  } className="text-xs">
-                    {topic.difficulty}
-                  </Badge>
                 </div>
                 <p className="text-sm text-muted-foreground font-reading">{topic.description}</p>
               </div>

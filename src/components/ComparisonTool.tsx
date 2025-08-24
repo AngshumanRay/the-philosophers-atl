@@ -156,12 +156,6 @@ export function ComparisonTool({ onBack }: ComparisonToolProps) {
             <CardHeader className="text-center">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Badge variant="outline" className="capitalize">{topicData.category}</Badge>
-                <Badge variant={
-                  topicData.difficulty === 'beginner' ? 'secondary' : 
-                  topicData.difficulty === 'intermediate' ? 'default' : 'destructive'
-                }>
-                  {topicData.difficulty}
-                </Badge>
               </div>
               <CardTitle className="font-display text-2xl">{topicData.title}</CardTitle>
               <CardDescription className="font-reading text-base">
@@ -274,12 +268,6 @@ function PhilosopherPerspective({ philosopher, topic, position }: PhilosopherPer
         </div>
         <div className="flex items-center gap-2">
           <Badge variant="outline">{philosopher.school}</Badge>
-          <Badge variant={
-            position.difficulty === 'beginner' ? 'secondary' : 
-            position.difficulty === 'intermediate' ? 'default' : 'destructive'
-          } className="text-xs">
-            {position.difficulty}
-          </Badge>
         </div>
       </CardHeader>
       <CardContent className="space-y-4">

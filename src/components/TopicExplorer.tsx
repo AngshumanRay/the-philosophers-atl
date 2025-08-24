@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowLeft, Brain, Heart, Scales, Users, Palette, Lightbulb } from '@phosphor-icons/react';
+import { ArrowLeft, Brain, Heart, Scales, Users, Palette, Lightbulb, Star } from '@phosphor-icons/react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -21,7 +21,8 @@ export function TopicExplorer({ onBack }: TopicExplorerProps) {
     epistemology: Lightbulb,
     political: Scales,
     aesthetics: Palette,
-    logic: Users
+    logic: Users,
+    spirituality: Star
   };
 
   const categoryColors = {
@@ -30,7 +31,8 @@ export function TopicExplorer({ onBack }: TopicExplorerProps) {
     epistemology: 'bg-yellow-100 text-yellow-800',
     political: 'bg-green-100 text-green-800',
     aesthetics: 'bg-purple-100 text-purple-800',
-    logic: 'bg-gray-100 text-gray-800'
+    logic: 'bg-gray-100 text-gray-800',
+    spirituality: 'bg-amber-100 text-amber-800'
   };
 
   const groupedTopics = topics.reduce((acc, topic) => {
@@ -66,7 +68,7 @@ export function TopicExplorer({ onBack }: TopicExplorerProps) {
       </div>
 
       <Tabs defaultValue="all" className="space-y-6">
-        <TabsList className="grid grid-cols-7 w-full">
+        <TabsList className="grid grid-cols-8 w-full">
           <TabsTrigger value="all">All Topics</TabsTrigger>
           {Object.keys(groupedTopics).map((category) => (
             <TabsTrigger key={category} value={category} className="capitalize">
@@ -133,12 +135,6 @@ function TopicCard({ topic, onClick }: TopicCardProps) {
           <Badge variant="outline" className="text-xs capitalize">
             {topic.category}
           </Badge>
-          <Badge variant={
-            topic.difficulty === 'beginner' ? 'secondary' : 
-            topic.difficulty === 'intermediate' ? 'default' : 'destructive'
-          } className="text-xs">
-            {topic.difficulty}
-          </Badge>
         </div>
         <CardTitle className="font-display text-lg group-hover:text-primary transition-colors">
           {topic.title}
@@ -183,12 +179,6 @@ function TopicDetail({ topic, onBack }: TopicDetailProps) {
           <div className="flex items-center gap-3 mb-2">
             <Badge variant="outline" className="capitalize">
               {topic.category}
-            </Badge>
-            <Badge variant={
-              topic.difficulty === 'beginner' ? 'secondary' : 
-              topic.difficulty === 'intermediate' ? 'default' : 'destructive'
-            }>
-              {topic.difficulty}
             </Badge>
           </div>
           <h1 className="font-display text-3xl font-bold">{topic.title}</h1>
@@ -314,9 +304,6 @@ function TopicDetail({ topic, onBack }: TopicDetailProps) {
                         <p className="text-xs font-reading line-clamp-2">
                           <strong>{philosopher.topics[topic.id].stance}</strong>
                         </p>
-                        <Badge variant="outline" className="text-xs mt-1">
-                          {philosopher.topics[topic.id].difficulty}
-                        </Badge>
                       </div>
                     </div>
                   ))}
