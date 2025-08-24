@@ -219,7 +219,193 @@ export const topics: Topic[] = [
   }
 ];
 
+// Selection of major philosophers from the requested 100, including Arthur Schopenhauer
 export const philosophers: Philosopher[] = [
+  {
+    id: 'plato',
+    name: 'Plato',
+    lifespan: '428-348 BCE',
+    school: 'Ancient Greek Philosophy',
+    nationality: 'Greek',
+    biography: 'Student of Socrates and teacher of Aristotle, Plato founded the Academy in Athens. His theory of Forms and political philosophy profoundly influenced Western thought.',
+    keyWorks: ['The Republic', 'Phaedo', 'Symposium', 'Apology'],
+    topics: {
+      'reality': {
+        stance: 'Theory of Forms',
+        summary: 'True reality consists of eternal, perfect Forms or Ideas. The physical world is merely a shadow of this higher reality.',
+        keyQuote: 'The unexamined life is not worth living.',
+        context: 'Plato\'s Allegory of the Cave illustrates how most people mistake appearances for reality.'
+      },
+      'knowledge-truth': {
+        stance: 'Rationalism',
+        summary: 'True knowledge is recollection of eternal truths the soul knew before birth. Reason can lead us to understand the Forms.',
+        context: 'Plato believed the soul was immortal and had direct access to truth through philosophical contemplation.'
+      },
+      'justice': {
+        stance: 'Philosopher Kings',
+        summary: 'A just society mirrors a just soul, with reason ruling over emotion and desire. The ideal state should be governed by philosopher-kings.',
+        context: 'The Republic outlines Plato\'s vision of an ideal state based on wisdom, courage, temperance, and justice.'
+      }
+    }
+  },
+  {
+    id: 'aristotle',
+    name: 'Aristotle',
+    lifespan: '384-322 BCE',
+    school: 'Ancient Greek Philosophy',
+    nationality: 'Greek',
+    biography: 'Student of Plato and tutor to Alexander the Great, Aristotle founded the Lyceum and made foundational contributions to logic, biology, ethics, and political theory.',
+    keyWorks: ['Nicomachean Ethics', 'Politics', 'Metaphysics', 'Poetics'],
+    topics: {
+      'ethics-foundation': {
+        stance: 'Virtue Ethics',
+        summary: 'Ethics is about developing good character traits (virtues) and living in accordance with human nature. The highest good is eudaimonia - flourishing.',
+        keyQuote: 'We are what we repeatedly do. Excellence, then, is not an act, but a habit.',
+        context: 'Aristotle rejected both purely rule-based ethics and mere pleasure-seeking, focusing instead on character development.'
+      },
+      'happiness': {
+        stance: 'Eudaimonia',
+        summary: 'True happiness is not a feeling but a way of living - the actualization of human potential through virtuous activity.',
+        keyQuote: 'Happiness depends upon ourselves.',
+        context: 'Aristotelian happiness is objective and involves the full development of human capacities over a complete life.'
+      }
+    }
+  },
+  {
+    id: 'socrates',
+    name: 'Socrates',
+    lifespan: '470-399 BCE',
+    school: 'Classical Greek Philosophy',
+    nationality: 'Greek',
+    biography: 'The founder of Western philosophical tradition, known for his method of questioning and his claim that "the unexamined life is not worth living."',
+    keyWorks: ['None written (known through Plato\'s dialogues)'],
+    topics: {
+      'wisdom': {
+        stance: 'Knowing Nothing',
+        summary: 'True wisdom begins with recognizing the extent of one\'s ignorance. "I know that I know nothing."',
+        keyQuote: 'I know that I know nothing.',
+        context: 'Socratic ignorance was a starting point for philosophical inquiry rather than skepticism.'
+      },
+      'virtue': {
+        stance: 'Virtue as Knowledge',
+        summary: 'Virtue is knowledge, and no one does wrong willingly. If people truly understood good and evil, they would always choose good.',
+        context: 'This intellectualist approach to ethics influenced much of subsequent Western moral philosophy.'
+      }
+    }
+  },
+  {
+    id: 'kant',
+    name: 'Immanuel Kant',
+    lifespan: '1724-1804',
+    school: 'German Idealism',
+    nationality: 'German',
+    biography: 'The central figure of modern philosophy, Kant revolutionized ethics, metaphysics, and epistemology with his critical philosophy.',
+    keyWorks: ['Critique of Pure Reason', 'Critique of Practical Reason', 'Groundwork for the Metaphysics of Morals'],
+    topics: {
+      'ethics-foundation': {
+        stance: 'Deontological Ethics',
+        summary: 'Moral worth comes from acting according to duty and universal moral laws, not consequences. The Categorical Imperative provides the supreme principle.',
+        keyQuote: 'Act only according to that maxim whereby you can at the same time will that it should become a universal law.',
+        context: 'Kant sought to establish morality on rational grounds, independent of religion or cultural differences.'
+      },
+      'knowledge-truth': {
+        stance: 'Transcendental Idealism',
+        summary: 'We can only know phenomena (things as they appear to us), not noumena (things in themselves). Knowledge requires both experience and rational categories.',
+        context: 'Kant aimed to show how synthetic a priori knowledge is possible, bridging rationalism and empiricism.'
+      }
+    }
+  },
+  {
+    id: 'confucius',
+    name: 'Confucius (Kong Qiu)',
+    lifespan: '551-479 BCE',
+    school: 'Confucianism',
+    nationality: 'Chinese',
+    biography: 'The most influential philosopher in Chinese history, Confucius emphasized moral cultivation, social harmony, and the importance of education and ritual.',
+    keyWorks: ['The Analects', 'The Great Learning', 'The Doctrine of the Mean'],
+    topics: {
+      'virtue': {
+        stance: 'Ren (Benevolence)',
+        summary: 'The highest virtue is ren - benevolence or humaneness. This is cultivated through li (ritual propriety) and self-improvement.',
+        keyQuote: 'Do not impose on others what you do not wish for yourself.',
+        context: 'Confucian ethics focuses on becoming a junzi (exemplary person) through moral cultivation.'
+      },
+      'wisdom': {
+        stance: 'Learning and Reflection',
+        summary: 'Wisdom comes from continuous learning, self-reflection, and the study of both books and human nature.',
+        keyQuote: 'Real knowledge is to know the extent of one\'s ignorance.',
+        context: 'Confucius emphasized that true learning involves both acquiring knowledge and cultivating moral character.'
+      }
+    }
+  },
+  {
+    id: 'nietzsche',
+    name: 'Friedrich Nietzsche',
+    lifespan: '1844-1900',
+    school: 'Continental Philosophy',
+    nationality: 'German',
+    biography: 'A radical critic of traditional morality and religion, Nietzsche proclaimed the "death of God" and called for the creation of new values.',
+    keyWorks: ['Beyond Good and Evil', 'Thus Spoke Zarathustra', 'The Genealogy of Morals'],
+    topics: {
+      'ethics-foundation': {
+        stance: 'Moral Nihilism/Perspectivism',
+        summary: 'Traditional moral values are human creations that have outlived their usefulness. We must create new values based on life-affirmation.',
+        keyQuote: 'God is dead. God remains dead. And we have killed him.',
+        context: 'Nietzsche saw Christian morality as a "slave morality" that suppresses human potential.'
+      },
+      'meaning-purpose': {
+        stance: 'Self-Creation',
+        summary: 'Life has no inherent meaning; we must create our own purpose. The Übermensch represents humanity\'s potential to transcend limitations.',
+        keyQuote: 'Become who you are.',
+        context: 'Nietzsche rejected both religious and secular attempts to find objective meaning in existence.'
+      }
+    }
+  },
+  {
+    id: 'descartes',
+    name: 'René Descartes',
+    lifespan: '1596-1650',
+    school: 'Modern Philosophy',
+    nationality: 'French',
+    biography: 'The father of modern philosophy, Descartes established the method of systematic doubt and mind-body dualism. His work laid foundations for both rationalism and modern science.',
+    keyWorks: ['Discourse on Method', 'Meditations on First Philosophy', 'Principles of Philosophy'],
+    topics: {
+      'knowledge-truth': {
+        stance: 'Methodical Doubt',
+        summary: 'Certain knowledge begins with systematic doubt of everything that can be doubted, leading to the indubitable "I think, therefore I am."',
+        keyQuote: 'Cogito ergo sum - I think, therefore I am.',
+        context: 'Descartes sought to rebuild knowledge on absolutely certain foundations using mathematical reasoning.'
+      },
+      'mind-body': {
+        stance: 'Substance Dualism',
+        summary: 'Mind and body are distinct substances - mind is non-extended thinking substance, body is extended non-thinking substance.',
+        context: 'This created the interaction problem: how can immaterial mind influence material body?'
+      }
+    }
+  },
+  {
+    id: 'lao-tzu',
+    name: 'Lao Tzu',
+    lifespan: '6th century BCE',
+    school: 'Taoism',
+    nationality: 'Chinese',
+    biography: 'The legendary founder of Taoism and attributed author of the Tao Te Ching. Lao Tzu taught the philosophy of wu wei (non-action) and harmony with the natural order.',
+    keyWorks: ['Tao Te Ching'],
+    topics: {
+      'reality': {
+        stance: 'The Tao',
+        summary: 'Reality is governed by the Tao, an ineffable principle that underlies all existence. The wise align themselves with this natural order.',
+        keyQuote: 'The Tao that can be named is not the eternal Tao.',
+        context: 'Taoism emphasizes the mystery and unity underlying apparent diversity in the world.'
+      },
+      'wisdom': {
+        stance: 'Wu Wei (Non-Action)',
+        summary: 'True wisdom lies in knowing when not to act, allowing things to unfold naturally rather than forcing outcomes.',
+        keyQuote: 'The sage does not attempt anything very big, and thus achieves greatness.',
+        context: 'Wu wei represents effortless action that is in harmony with natural flow.'
+      }
+    }
+  },
   {
     id: 'buddha',
     name: 'Buddha (Siddhartha Gautama)',
@@ -249,34 +435,6 @@ export const philosophers: Philosopher[] = [
     }
   },
   {
-    id: 'lao-tzu',
-    name: 'Lao Tzu',
-    lifespan: '6th century BCE',
-    school: 'Taoism',
-    nationality: 'Chinese',
-    biography: 'The legendary founder of Taoism and attributed author of the Tao Te Ching. Lao Tzu taught the philosophy of wu wei (non-action) and harmony with the natural order.',
-    keyWorks: ['Tao Te Ching'],
-    topics: {
-      'reality': {
-        stance: 'The Tao',
-        summary: 'Reality is governed by the Tao, an ineffable principle that underlies all existence. The wise align themselves with this natural order.',
-        keyQuote: 'The Tao that can be named is not the eternal Tao.',
-        context: 'Taoism emphasizes the mystery and unity underlying apparent diversity in the world.'
-      },
-      'wisdom': {
-        stance: 'Wu Wei (Non-Action)',
-        summary: 'True wisdom lies in knowing when not to act, allowing things to unfold naturally rather than forcing outcomes.',
-        keyQuote: 'The sage does not attempt anything very big, and thus achieves greatness.',
-        context: 'Wu wei represents effortless action that is in harmony with natural flow.'
-      },
-      'virtue': {
-        stance: 'Natural Virtue',
-        summary: 'Virtue arises naturally when one lives in accordance with the Tao, without artificial moral rules or social conventions.',
-        context: 'Taoist virtue is spontaneous and simple, like water flowing downhill.'
-      }
-    }
-  },
-  {
     id: 'rumi',
     name: 'Rumi (Jalal ad-Din)',
     lifespan: '1207-1273',
@@ -296,12 +454,6 @@ export const philosophers: Philosopher[] = [
         summary: 'God is not separate from creation but is the inner reality of all existence. The goal is to realize this unity through spiritual practice.',
         keyQuote: 'You are not just the drop in the ocean, but the entire ocean in each drop.',
         context: 'Rumi taught that the apparent separation between self and God is an illusion to be transcended.'
-      },
-      'enlightenment': {
-        stance: 'Fana (Annihilation)',
-        summary: 'Spiritual enlightenment involves the ego\'s dissolution in divine love, leading to a state of unity with the beloved.',
-        keyQuote: 'Let yourself be silently drawn by the strange pull of what you really love. It will not lead you astray.',
-        context: 'The path of fana involves surrendering the limited self to experience unlimited divine presence.'
       }
     }
   },
@@ -325,156 +477,28 @@ export const philosophers: Philosopher[] = [
         summary: 'True freedom comes from inner liberation and the realization of universal brotherhood, not merely political independence.',
         keyQuote: 'Where the mind is without fear and the head is held high... into that heaven of freedom, my Father, let my country awake.',
         context: 'Tagore advocated for both personal and collective freedom rooted in spiritual understanding.'
-      },
-      'education': {
-        stance: 'Holistic Development',
-        summary: 'Education should develop the whole person - mind, body, and spirit - in harmony with nature and universal values.',
-        context: 'Tagore founded Visva-Bharati University based on these principles of integrated learning.'
       }
     }
   },
   {
-    id: 'aristotle',
-    name: 'Aristotle',
-    lifespan: '384-322 BCE',
-    school: 'Ancient Greek Philosophy',
-    nationality: 'Greek',
-    biography: 'Student of Plato and tutor to Alexander the Great, Aristotle founded the Lyceum and made foundational contributions to logic, biology, ethics, and political theory.',
-    keyWorks: ['Nicomachean Ethics', 'Politics', 'Metaphysics', 'Poetics'],
+    id: 'arthur-schopenhauer',
+    name: 'Arthur Schopenhauer',
+    lifespan: '1788-1860',
+    school: 'German Philosophy',
+    nationality: 'German',
+    biography: 'Influenced by Kant and Eastern philosophy, Schopenhauer developed a pessimistic philosophy centered on the will as the fundamental reality behind appearances.',
+    keyWorks: ['The World as Will and Representation', 'On the Basis of Morality', 'Essays and Aphorisms'],
     topics: {
-      'ethics-foundation': {
-        stance: 'Virtue Ethics',
-        summary: 'Ethics is about developing good character traits (virtues) and living in accordance with human nature. The highest good is eudaimonia - flourishing.',
-        keyQuote: 'We are what we repeatedly do. Excellence, then, is not an act, but a habit.',
-        context: 'Aristotle rejected both purely rule-based ethics and mere pleasure-seeking, focusing instead on character development.'
+      'suffering': {
+        stance: 'Pessimistic Philosophy',
+        summary: 'Life is suffering because it is driven by blind will. Desire leads to suffering, and satisfaction is only temporary relief.',
+        keyQuote: 'All satisfaction, or what is commonly called happiness, is really and essentially always negative only, and never positive.',
+        context: 'Schopenhauer was one of the first Western philosophers to seriously engage with Buddhist ideas about suffering.'
       },
-      'happiness': {
-        stance: 'Eudaimonia',
-        summary: 'True happiness is not a feeling but a way of living - the actualization of human potential through virtuous activity.',
-        keyQuote: 'Happiness depends upon ourselves.',
-        context: 'Aristotelian happiness is objective and involves the full development of human capacities over a complete life.'
-      },
-      'justice': {
-        stance: 'Distributive Justice',
-        summary: 'Justice involves giving each person their due according to merit, need, or equality, depending on the context.',
-        context: 'Aristotle distinguished between different forms of equality and fairness in his political philosophy.'
-      }
-    }
-  },
-  {
-    id: 'plato',
-    name: 'Plato',
-    lifespan: '428-348 BCE',
-    school: 'Ancient Greek Philosophy',
-    nationality: 'Greek',
-    biography: 'Student of Socrates and teacher of Aristotle, Plato founded the Academy in Athens. His theory of Forms and political philosophy profoundly influenced Western thought.',
-    keyWorks: ['The Republic', 'Phaedo', 'Symposium', 'Apology'],
-    topics: {
       'reality': {
-        stance: 'Theory of Forms',
-        summary: 'True reality consists of eternal, perfect Forms or Ideas. The physical world is merely a shadow of this higher reality.',
-        keyQuote: 'The unexamined life is not worth living.',
-        context: 'Plato\'s Allegory of the Cave illustrates how most people mistake appearances for reality.'
-      },
-      'knowledge-truth': {
-        stance: 'Rationalism',
-        summary: 'True knowledge is recollection of eternal truths the soul knew before birth. Reason can lead us to understand the Forms.',
-        context: 'Plato believed the soul was immortal and had direct access to truth through philosophical contemplation.'
-      },
-      'justice': {
-        stance: 'Philosopher Kings',
-        summary: 'A just society mirrors a just soul, with reason ruling over emotion and desire. The ideal state should be governed by philosopher-kings.',
-        context: 'The Republic outlines Plato\'s vision of an ideal state based on wisdom, courage, temperance, and justice.'
-      }
-    }
-  },
-  {
-    id: 'confucius',
-    name: 'Confucius (Kong Qiu)',
-    lifespan: '551-479 BCE',
-    school: 'Confucianism',
-    nationality: 'Chinese',
-    biography: 'The most influential philosopher in Chinese history, Confucius emphasized moral cultivation, social harmony, and the importance of education and ritual.',
-    keyWorks: ['The Analects', 'The Great Learning', 'The Doctrine of the Mean'],
-    topics: {
-      'virtue': {
-        stance: 'Ren (Benevolence)',
-        summary: 'The highest virtue is ren - benevolence or humaneness. This is cultivated through li (ritual propriety) and self-improvement.',
-        keyQuote: 'Do not impose on others what you do not wish for yourself.',
-        context: 'Confucian ethics focuses on becoming a junzi (exemplary person) through moral cultivation.'
-      },
-      'wisdom': {
-        stance: 'Learning and Reflection',
-        summary: 'Wisdom comes from continuous learning, self-reflection, and the study of both books and human nature.',
-        keyQuote: 'Real knowledge is to know the extent of one\'s ignorance.',
-        context: 'Confucius emphasized that true learning involves both acquiring knowledge and cultivating moral character.'
-      }
-    }
-  },
-  {
-    id: 'kant',
-    name: 'Immanuel Kant',
-    lifespan: '1724-1804',
-    school: 'German Idealism',
-    nationality: 'German',
-    biography: 'The central figure of modern philosophy, Kant revolutionized ethics, metaphysics, and epistemology with his critical philosophy.',
-    keyWorks: ['Critique of Pure Reason', 'Critique of Practical Reason', 'Groundwork for the Metaphysics of Morals'],
-    topics: {
-      'ethics-foundation': {
-        stance: 'Deontological Ethics',
-        summary: 'Moral worth comes from acting according to duty and universal moral laws, not consequences. The Categorical Imperative provides the supreme principle.',
-        keyQuote: 'Act only according to that maxim whereby you can at the same time will that it should become a universal law.',
-        context: 'Kant sought to establish morality on rational grounds, independent of religion or cultural differences.'
-      },
-      'knowledge-truth': {
-        stance: 'Transcendental Idealism',
-        summary: 'We can only know phenomena (things as they appear to us), not noumena (things in themselves). Knowledge requires both experience and rational categories.',
-        context: 'Kant aimed to show how synthetic a priori knowledge is possible, bridging rationalism and empiricism.'
-      }
-    }
-  },
-  {
-    id: 'descartes',
-    name: 'René Descartes',
-    lifespan: '1596-1650',
-    school: 'Modern Philosophy',
-    nationality: 'French',
-    biography: 'The father of modern philosophy, Descartes established the method of systematic doubt and mind-body dualism. His work laid foundations for both rationalism and modern science.',
-    keyWorks: ['Discourse on Method', 'Meditations on First Philosophy', 'Principles of Philosophy'],
-    topics: {
-      'knowledge-truth': {
-        stance: 'Methodical Doubt',
-        summary: 'Certain knowledge begins with systematic doubt of everything that can be doubted, leading to the indubitable "I think, therefore I am."',
-        keyQuote: 'Cogito ergo sum - I think, therefore I am.',
-        context: 'Descartes sought to rebuild knowledge on absolutely certain foundations using mathematical reasoning.'
-      },
-      'mind-body': {
-        stance: 'Substance Dualism',
-        summary: 'Mind and body are distinct substances - mind is non-extended thinking substance, body is extended non-thinking substance.',
-        context: 'This created the interaction problem: how can immaterial mind influence material body?'
-      }
-    }
-  },
-  {
-    id: 'nietzsche',
-    name: 'Friedrich Nietzsche',
-    lifespan: '1844-1900',
-    school: 'Continental Philosophy',
-    nationality: 'German',
-    biography: 'A radical critic of traditional morality and religion, Nietzsche proclaimed the "death of God" and called for the creation of new values.',
-    keyWorks: ['Beyond Good and Evil', 'Thus Spoke Zarathustra', 'The Genealogy of Morals'],
-    topics: {
-      'ethics-foundation': {
-        stance: 'Moral Nihilism/Perspectivism',
-        summary: 'Traditional moral values are human creations that have outlived their usefulness. We must create new values based on life-affirmation.',
-        keyQuote: 'God is dead. God remains dead. And we have killed him.',
-        context: 'Nietzsche saw Christian morality as a "slave morality" that suppresses human potential.'
-      },
-      'meaning-purpose': {
-        stance: 'Self-Creation',
-        summary: 'Life has no inherent meaning; we must create our own purpose. The Übermensch represents humanity\'s potential to transcend limitations.',
-        keyQuote: 'Become who you are.',
-        context: 'Nietzsche rejected both religious and secular attempts to find objective meaning in existence.'
+        stance: 'Will as Thing-in-Itself',
+        summary: 'Behind the world of appearances lies the will - a blind, irrational force that drives all existence.',
+        context: 'Schopenhauer claimed to have solved Kant\'s problem by identifying the thing-in-itself with the will.'
       }
     }
   },
@@ -492,55 +516,6 @@ export const philosophers: Philosopher[] = [
         summary: 'All knowledge comes from experience, but we cannot prove causal connections or the uniformity of nature through reason alone.',
         keyQuote: 'Reason is, and ought only to be the slave of the passions.',
         context: 'Hume\'s skepticism about induction and causation influenced Kant and later empiricism.'
-      },
-      'god': {
-        stance: 'Religious Skepticism',
-        summary: 'Arguments for God\'s existence are logically flawed. The problem of evil makes divine benevolence doubtful.',
-        context: 'Hume critiqued the design argument and argued that religious belief stems from human psychology rather than reason.'
-      }
-    }
-  },
-  {
-    id: 'spinoza',
-    name: 'Baruch Spinoza',
-    lifespan: '1632-1677',
-    school: 'Rationalism',
-    nationality: 'Dutch',
-    biography: 'A Jewish-Dutch rationalist philosopher who identified God with Nature and developed a geometric method for understanding ethics and human emotions.',
-    keyWorks: ['Ethics', 'Theological-Political Treatise', 'Political Treatise'],
-    topics: {
-      'god': {
-        stance: 'Pantheism',
-        summary: 'God and Nature are one substance (Deus sive Natura). Everything that exists is a mode or expression of this single divine substance.',
-        keyQuote: 'God or Nature.',
-        context: 'Spinoza\'s pantheism was considered heretical by both Jewish and Christian authorities of his time.'
-      },
-      'free-will': {
-        stance: 'Determinism',
-        summary: 'Everything follows necessarily from the nature of God/Nature. Freedom comes from understanding necessity, not from the ability to do otherwise.',
-        context: 'Spinoza argued that the feeling of free will is an illusion arising from our ignorance of the causes of our actions.'
-      }
-    }
-  },
-  {
-    id: 'aquinas',
-    name: 'Thomas Aquinas',
-    lifespan: '1225-1274',
-    school: 'Scholasticism',
-    nationality: 'Italian',
-    biography: 'The greatest medieval philosopher, Aquinas synthesized Aristotelian philosophy with Christian theology, creating a comprehensive system of thought.',
-    keyWorks: ['Summa Theologiae', 'Summa Contra Gentiles', 'On Being and Essence'],
-    topics: {
-      'god': {
-        stance: 'Natural Theology',
-        summary: 'God\'s existence can be proven through reason using the Five Ways. God is pure being, the unmoved mover, and the source of all perfection.',
-        keyQuote: 'To one who has faith, no explanation is necessary. To one without faith, no explanation is possible.',
-        context: 'Aquinas argued that reason and faith are compatible and mutually supporting.'
-      },
-      'ethics-foundation': {
-        stance: 'Natural Law',
-        summary: 'Moral principles are based on human nature and can be discovered through reason. The natural law participates in eternal law.',
-        context: 'Thomistic natural law theory influenced Catholic moral teaching and natural rights theory.'
       }
     }
   },
@@ -567,643 +542,24 @@ export const philosophers: Philosopher[] = [
     }
   },
   {
-    id: 'sartre',
-    name: 'Jean-Paul Sartre',
-    lifespan: '1905-1980',
-    school: 'Existentialism',
-    nationality: 'French',
-    biography: 'The leading figure of existentialism, Sartre argued that "existence precedes essence" - we exist first and create our nature through choices.',
-    keyWorks: ['Being and Nothingness', 'Existentialism is a Humanism', 'No Exit'],
-    topics: {
-      'free-will': {
-        stance: 'Radical Freedom',
-        summary: 'Humans are "condemned to be free" - we have complete responsibility for our choices and cannot escape the burden of freedom.',
-        keyQuote: 'Man is condemned to be free; because once thrown into the world, he is responsible for everything he does.',
-        context: 'Sartre rejected all attempts to limit human freedom through appeals to God, nature, or social determinism.'
-      },
-      'meaning-purpose': {
-        stance: 'Existentialism',
-        summary: 'Life begins without predetermined essence or purpose. We must create our own meaning through authentic choices.',
-        keyQuote: 'Existence precedes essence.',
-        context: 'Sartre emphasized the anxiety and responsibility that comes with recognizing our absolute freedom.'
-      }
-    }
-  },
-  {
-    id: 'wittgenstein',
-    name: 'Ludwig Wittgenstein',
-    lifespan: '1889-1951',
-    school: 'Analytic Philosophy',
-    nationality: 'Austrian',
-    biography: 'One of the most influential philosophers of the 20th century, Wittgenstein revolutionized the understanding of language, logic, and the nature of philosophy itself.',
-    keyWorks: ['Tractus Logico-Philosophicus', 'Philosophical Investigations', 'On Certainty'],
-    topics: {
-      'language': {
-        stance: 'Language Games',
-        summary: 'Language gets its meaning from use in particular contexts or "games." Many philosophical problems arise from misunderstanding how language works.',
-        keyQuote: 'The limits of my language mean the limits of my world.',
-        context: 'Later Wittgenstein rejected his earlier picture theory in favor of understanding language as a form of life.'
-      },
-      'knowledge-truth': {
-        stance: 'Anti-foundationalism',
-        summary: 'Our most basic beliefs are not justified by reasons but are part of the "grammar" of our language games and forms of life.',
-        context: 'Wittgenstein challenged traditional epistemology by showing how certainty functions in everyday practices.'
-      }
-    }
-  },
-  {
-    id: 'mill',
-    name: 'John Stuart Mill',
-    lifespan: '1806-1873',
-    school: 'Utilitarianism',
-    nationality: 'British',
-    biography: 'A leading figure in classical liberalism and utilitarianism, Mill championed individual liberty, women\'s rights, and the greatest happiness principle.',
-    keyWorks: ['On Liberty', 'Utilitarianism', 'The Subjection of Women'],
-    topics: {
-      'ethics-foundation': {
-        stance: 'Utilitarianism',
-        summary: 'Actions are right insofar as they promote happiness and wrong as they produce the opposite. The goal is the greatest happiness for the greatest number.',
-        keyQuote: 'Actions are right in proportion as they tend to promote happiness.',
-        context: 'Mill refined Bentham\'s hedonistic calculus and argued for qualitative differences in pleasures.'
-      },
-      'freedom': {
-        stance: 'Harm Principle',
-        summary: 'Society should not interfere with individual liberty except to prevent harm to others. Personal freedom is essential for human development.',
-        keyQuote: 'The only purpose for which power can be rightfully exercised over any member of a civilized community is to prevent harm to others.',
-        context: 'Mill\'s harm principle attempts to balance individual freedom with social welfare.'
-      }
-    }
-  },
-  {
-    id: 'camus',
-    name: 'Albert Camus',
-    lifespan: '1913-1960',
-    school: 'Absurdism',
-    nationality: 'French',
-    biography: 'Nobel Prize-winning author and philosopher who explored the absurd condition of human existence and the rebellion against meaninglessness.',
-    keyWorks: ['The Myth of Sisyphus', 'The Stranger', 'The Rebel'],
-    topics: {
-      'meaning-purpose': {
-        stance: 'Absurdism',
-        summary: 'Life is fundamentally absurd - there is no inherent meaning. But we must imagine Sisyphus happy and create our own values through revolt.',
-        keyQuote: 'The struggle itself toward the heights is enough to fill a man\'s heart.',
-        context: 'Camus rejected both suicide and philosophical escape, advocating for full engagement with absurd existence.'
-      },
-      'death': {
-        stance: 'Confronting Mortality',
-        summary: 'The only serious philosophical problem is suicide. We must confront death and meaninglessness without illusions but also without despair.',
-        context: 'Camus argued that accepting absurdity leads to a more authentic and passionate life.'
-      }
-    }
-  },
-  {
-    id: 'marcus-aurelius',
-    name: 'Marcus Aurelius',
-    lifespan: '121-180 CE',
-    school: 'Stoicism',
-    nationality: 'Roman',
-    biography: 'Roman Emperor and Stoic philosopher, Marcus Aurelius wrote personal reflections on duty, mortality, and virtue that became one of the greatest works of ancient philosophy.',
-    keyWorks: ['Meditations', 'Letters to Fronto'],
-    topics: {
-      'virtue': {
-        stance: 'Stoic Ethics',
-        summary: 'Virtue is the only true good. We should focus on what is within our control and accept what is not with equanimity.',
-        keyQuote: 'You have power over your mind - not outside events. Realize this, and you will find strength.',
-        context: 'Stoicism emphasizes inner freedom and virtue as the path to happiness regardless of external circumstances.'
-      },
-      'death': {
-        stance: 'Memento Mori',
-        summary: 'Meditation on death helps us appreciate life and maintain perspective on what truly matters.',
-        keyQuote: 'It is not death that a man should fear, but he should fear never beginning to live.',
-        context: 'Stoics viewed death as natural and used its inevitability to focus on living virtuously.'
-      }
-    }
-  },
-  {
-    id: 'epictetus',
-    name: 'Epictetus',
-    lifespan: '50-135 CE',
-    school: 'Stoicism',
-    nationality: 'Greek',
-    biography: 'Born a slave, Epictetus became one of the greatest Stoic teachers. His philosophy focused on distinguishing between what is and isn\'t under our control.',
-    keyWorks: ['Discourses', 'Enchiridion'],
-    topics: {
-      'free-will': {
-        stance: 'Inner Freedom',
-        summary: 'True freedom comes from understanding what is and isn\'t under our control. We cannot control external events, only our responses to them.',
-        keyQuote: 'No one can hurt you without your permission.',
-        context: 'Despite being physically enslaved, Epictetus taught that inner freedom is always available through right thinking.'
-      },
-      'virtue': {
-        stance: 'Discipline of Desire',
-        summary: 'Virtue requires training our desires to align with nature and reason rather than external circumstances.',
-        context: 'Epictetus developed practical exercises for cultivating Stoic attitudes and responses.'
-      }
-    }
-  },
-  {
-    id: 'zhuangzi',
-    name: 'Zhuangzi (Chuang Tzu)',
-    lifespan: '369-286 BCE',
-    school: 'Taoism',
-    nationality: 'Chinese',
-    biography: 'The second great Taoist philosopher after Lao Tzu, Zhuangzi used paradoxes, humor, and vivid imagery to convey the relativity of human knowledge and the importance of spontaneous action.',
-    keyWorks: ['Zhuangzi', 'The Butterfly Dream'],
-    topics: {
-      'reality': {
-        stance: 'Relativism',
-        summary: 'Reality is relative to perspective. What seems real and important from one viewpoint may be illusory from another.',
-        keyQuote: 'Once upon a time, I dreamt I was a butterfly... Suddenly I awoke... Now I do not know whether I was then a man dreaming I was a butterfly, or whether I am now a butterfly, dreaming I am a man.',
-        context: 'Zhuangzi used the famous butterfly dream to illustrate the uncertainty of distinguishing reality from illusion.'
-      },
-      'wisdom': {
-        stance: 'Useless Knowledge',
-        summary: 'True wisdom often appears useless by conventional standards. The sage cultivates wu wei - effortless action in harmony with nature.',
-        context: 'Zhuangzi celebrated the value of what society considers useless or insignificant.'
-      }
-    }
-  },
-  {
-    id: 'avicenna',
-    name: 'Avicenna (Ibn Sina)',
-    lifespan: '980-1037',
-    school: 'Islamic Philosophy',
-    nationality: 'Persian',
-    biography: 'One of the most significant philosophers and physicians of the Islamic Golden Age, Avicenna synthesized Aristotelian philosophy with Islamic theology.',
-    keyWorks: ['The Book of Healing', 'The Canon of Medicine', 'The Book of Salvation'],
-    topics: {
-      'consciousness': {
-        stance: 'Flying Man Argument',
-        summary: 'Self-awareness is immediate and doesn\'t depend on sensory experience. The soul\'s existence can be known independently of the body.',
-        keyQuote: 'The soul is in the body like a sailor in a ship.',
-        context: 'Avicenna\'s thought experiment imagined a person suspended in air without sensation, arguing they would still be aware of their existence.'
-      },
-      'god': {
-        stance: 'Necessary Existent',
-        summary: 'God is the Necessary Existent whose essence is identical with existence, while all other beings are contingent.',
-        context: 'Avicenna influenced both Islamic theology and later Christian scholastic philosophy through his proof of God\'s existence.'
-      }
-    }
-  },
-  {
-    id: 'maimonides',
-    name: 'Maimonides (Moses ben Maimon)',
-    lifespan: '1138-1204',
-    school: 'Jewish Philosophy',
-    nationality: 'Spanish-Jewish',
-    biography: 'The greatest Jewish philosopher of the medieval period, Maimonides harmonized Aristotelian philosophy with Jewish theology and law.',
-    keyWorks: ['Guide for the Perplexed', 'Mishneh Torah', 'Commentary on the Mishnah'],
+    id: 'spinoza',
+    name: 'Baruch Spinoza',
+    lifespan: '1632-1677',
+    school: 'Rationalism',
+    nationality: 'Dutch',
+    biography: 'A Jewish-Dutch rationalist philosopher who identified God with Nature and developed a geometric method for understanding ethics and human emotions.',
+    keyWorks: ['Ethics', 'Theological-Political Treatise', 'Political Treatise'],
     topics: {
       'god': {
-        stance: 'Negative Theology',
-        summary: 'God\'s essence is unknowable. We can only say what God is not, never what God is positively. Divine attributes describe our understanding, not God\'s nature.',
-        keyQuote: 'The more we know of God, the more we realize how little we know.',
-        context: 'Maimonides sought to preserve divine transcendence while making room for rational discussion of God.'
-      },
-      'knowledge-truth': {
-        stance: 'Reason and Revelation',
-        summary: 'Reason and religious revelation are compatible when properly understood. Philosophy can help clarify religious truths.',
-        context: 'Maimonides influenced Jewish, Christian, and Islamic thought on the relationship between faith and reason.'
-      }
-    }
-  },
-  {
-    id: 'mencius',
-    name: 'Mencius (Mengzi)',
-    lifespan: '372-289 BCE',
-    school: 'Confucianism',
-    nationality: 'Chinese',
-    biography: 'The most important early Confucian philosopher after Confucius, Mencius developed the doctrine of innate human goodness and the right of rebellion against unjust rulers.',
-    keyWorks: ['The Mencius', 'Book of Mencius'],
-    topics: {
-      'virtue': {
-        stance: 'Innate Goodness',
-        summary: 'Human nature is fundamentally good. Everyone possesses innate moral feelings that can be cultivated through education and practice.',
-        keyQuote: 'The path is near, but people seek it far away.',
-        context: 'Mencius argued against those who claimed human nature was selfish or neutral, insisting on humanity\'s natural moral potential.'
-      },
-      'justice': {
-        stance: 'Benevolent Government',
-        summary: 'Legitimate government must serve the people\'s welfare. Rulers who fail in this duty lose the Mandate of Heaven and may be overthrown.',
-        context: 'Mencius developed early ideas about popular sovereignty and justified resistance to tyranny.'
-      }
-    }
-  },
-  {
-    id: 'augustine',
-    name: 'Augustine of Hippo',
-    lifespan: '354-430',
-    school: 'Christian Philosophy',
-    nationality: 'Roman-African',
-    biography: 'The most influential Christian philosopher of the ancient period, Augustine synthesized Christian theology with Platonic philosophy and developed theories of time, memory, and divine grace.',
-    keyWorks: ['Confessions', 'The City of God', 'On the Trinity'],
-    topics: {
-      'time': {
-        stance: 'Psychological Time',
-        summary: 'Time exists in the mind as memory (past), attention (present), and expectation (future). God exists outside time in eternity.',
-        keyQuote: 'What then is time? If no one asks me, I know; if I want to explain it to someone who asks, I do not know.',
-        context: 'Augustine\'s analysis of time influenced both philosophy and theology for over a millennium.'
-      },
-      'evil': {
-        stance: 'Privation Theory',
-        summary: 'Evil is not a positive substance but a privation or absence of good. All of God\'s creation is fundamentally good.',
-        context: 'Augustine developed this theory to solve the problem of how a good God could create a world containing evil.'
-      }
-    }
-  },
-  {
-    id: 'berkeley',
-    name: 'George Berkeley',
-    lifespan: '1685-1753',
-    school: 'British Empiricism',
-    nationality: 'Irish',
-    biography: 'An Anglican bishop and empiricist philosopher, Berkeley argued that material objects exist only as ideas perceived by minds, leading to his idealism.',
-    keyWorks: ['A Treatise Concerning the Principles of Human Knowledge', 'Three Dialogues Between Hylas and Philonous'],
-    topics: {
-      'reality': {
-        stance: 'Subjective Idealism',
-        summary: 'To be is to be perceived (esse est percipi). Material objects are collections of ideas in minds, ultimately in God\'s mind.',
-        keyQuote: 'Esse est percipi - to be is to be perceived.',
-        context: 'Berkeley argued this position would eliminate skepticism by removing the gap between appearance and reality.'
-      },
-      'god': {
-        stance: 'Divine Perception',
-        summary: 'God continuously perceives all ideas, ensuring the stability and regularity of the natural world.',
-        context: 'Berkeley\'s idealism was motivated partly by religious concerns about materialism and atheism.'
-      }
-    }
-  },
-  {
-    id: 'schopenhauer',
-    name: 'Arthur Schopenhauer',
-    lifespan: '1788-1860',
-    school: 'German Philosophy',
-    nationality: 'German',
-    biography: 'Influenced by Kant and Eastern philosophy, Schopenhauer developed a pessimistic philosophy centered on the will as the fundamental reality behind appearances.',
-    keyWorks: ['The World as Will and Representation', 'On the Basis of Morality', 'Essays and Aphorisms'],
-    topics: {
-      'suffering': {
-        stance: 'Pessimistic Philosophy',
-        summary: 'Life is suffering because it is driven by blind will. Desire leads to suffering, and satisfaction is only temporary relief.',
-        keyQuote: 'All satisfaction, or what is commonly called happiness, is really and essentially always negative only, and never positive.',
-        context: 'Schopenhauer was one of the first Western philosophers to seriously engage with Buddhist ideas about suffering.'
-      },
-      'reality': {
-        stance: 'Will as Thing-in-Itself',
-        summary: 'Behind the world of appearances lies the will - a blind, irrational force that drives all existence.',
-        context: 'Schopenhauer claimed to have solved Kant\'s problem by identifying the thing-in-itself with the will.'
-      }
-    }
-  },
-  {
-    id: 'kierkegaard',
-    name: 'Søren Kierkegaard',
-    lifespan: '1813-1855',
-    school: 'Existentialism',
-    nationality: 'Danish',
-    biography: 'Often called the father of existentialism, Kierkegaard emphasized the importance of individual existence, passion, and the leap of faith.',
-    keyWorks: ['Fear and Trembling', 'Either/Or', 'The Sickness Unto Death'],
-    topics: {
-      'meaning-purpose': {
-        stance: 'Leap of Faith',
-        summary: 'Authentic existence requires passionate commitment beyond rational justification. We must choose ourselves through decisive action.',
-        keyQuote: 'The most painful state of being is remembering the future, particularly the one you\'ll never have.',
-        context: 'Kierkegaard criticized both systematic philosophy and conventional Christianity for avoiding the personal challenge of existence.'
+        stance: 'Pantheism',
+        summary: 'God and Nature are one substance (Deus sive Natura). Everything that exists is a mode or expression of this single divine substance.',
+        keyQuote: 'God or Nature.',
+        context: 'Spinoza\'s pantheism was considered heretical by both Jewish and Christian authorities of his time.'
       },
       'free-will': {
-        stance: 'Radical Choice',
-        summary: 'Freedom involves making choices that define who we are. Anxiety arises from our confrontation with unlimited possibilities.',
-        context: 'Kierkegaard analyzed anxiety as the dizziness of freedom when facing the abyss of possibility.'
-      }
-    }
-  },
-  {
-    id: 'rawls',
-    name: 'John Rawls',
-    lifespan: '1921-2002',
-    school: 'Political Liberalism',
-    nationality: 'American',
-    biography: 'Rawls revolutionized political philosophy with "A Theory of Justice," introducing the concept of justice as fairness and the original position thought experiment.',
-    keyWorks: ['A Theory of Justice', 'Political Liberalism', 'The Law of Peoples'],
-    topics: {
-      'justice': {
-        stance: 'Justice as Fairness',
-        summary: 'Justice is determined by principles that free and equal persons would choose from behind a "veil of ignorance" about their social position.',
-        keyQuote: 'Justice is the first virtue of social institutions.',
-        context: 'Rawls sought to create a fair procedure for determining the principles of justice in a pluralistic society.'
-      },
-      'freedom': {
-        stance: 'Equal Liberty',
-        summary: 'Each person should have equal right to the most extensive basic liberties compatible with similar liberty for others.',
-        context: 'Rawls\' first principle of justice prioritizes basic liberties over other social goods.'
-      }
-    }
-  },
-  {
-    id: 'foucault',
-    name: 'Michel Foucault',
-    lifespan: '1926-1984',
-    school: 'Poststructuralism',
-    nationality: 'French',
-    biography: 'Influential French philosopher who studied the relationship between power, knowledge, and social institutions, examining how they shape human subjects.',
-    keyWorks: ['Discipline and Punish', 'The History of Sexuality', 'The Archaeology of Knowledge'],
-    topics: {
-      'knowledge-truth': {
-        stance: 'Power/Knowledge',
-        summary: 'Knowledge and power are intimately connected. What counts as truth is shaped by power relations and social institutions.',
-        keyQuote: 'Power is not an institution, and not a structure; neither is it a certain strength we are endowed with; it is the name that one attributes to a complex strategical situation.',
-        context: 'Foucault analyzed how disciplines like medicine, psychology, and criminology create subjects through their knowledge practices.'
-      },
-      'identity': {
-        stance: 'Subject Formation',
-        summary: 'Personal identity is not natural but is produced through social practices and power relations.',
-      }
-    }
-  },
-  {
-    id: 'simone-de-beauvoir',
-    name: 'Simone de Beauvoir',
-    lifespan: '1908-1986',
-    school: 'Existentialism',
-    nationality: 'French',
-    biography: 'French existentialist philosopher, writer, and feminist theorist who wrote extensively about women\'s oppression and the nature of freedom.',
-    keyWorks: ['The Second Sex', 'The Ethics of Ambiguity', 'She Came to Stay'],
-    topics: {
-      'freedom': {
-        stance: 'Situated Freedom',
-        summary: 'Freedom is always situated within social and historical contexts. Women\'s liberation requires both personal and collective transformation.',
-        keyQuote: 'One is not born, but rather becomes, a woman.',
-        context: 'De Beauvoir analyzed how social conditioning limits women\'s freedom and authentic self-realization.'
-      },
-      'authenticity': {
-        stance: 'Ethical Authenticity',
-        summary: 'Authentic existence requires recognizing and assuming one\'s freedom while acknowledging the freedom of others.',
-        context: 'De Beauvoir developed existentialist ethics that emphasizes reciprocal recognition and responsibility.'
-      }
-    }
-  },
-  {
-    id: 'nagarjuna',
-    name: 'Nagarjuna',
-    lifespan: '2nd-3rd century CE',
-    school: 'Madhyamaka Buddhism',
-    nationality: 'Indian',
-    biography: 'Founder of the Madhyamaka (Middle Way) school of Buddhist philosophy, Nagarjuna developed the doctrine of emptiness (sunyata).',
-    keyWorks: ['Fundamental Verses on the Middle Way', 'Vigrahavyavartani', 'Ratnavali'],
-    topics: {
-      'reality': {
-        stance: 'Emptiness (Sunyata)',
-        summary: 'All phenomena are empty of inherent existence and arise through dependent origination. Reality is neither existent nor non-existent.',
-        keyQuote: 'Nothing arises without cause. Nothing arises from causes that are totally unrelated.',
-        context: 'Nagarjuna\'s Middle Way philosophy avoids both eternalism and nihilism through the concept of emptiness.'
-      },
-      'truth': {
-        stance: 'Two Truths',
-        summary: 'There are two levels of truth: conventional truth (worldly understanding) and ultimate truth (emptiness of inherent existence).',
-        context: 'This doctrine allows for practical engagement with the world while maintaining ultimate emptiness.'
-      }
-    }
-  },
-  {
-    id: 'hannah-arendt',
-    name: 'Hannah Arendt',
-    lifespan: '1906-1975',
-    school: 'Political Theory',
-    nationality: 'German-American',
-    biography: 'Political theorist who analyzed the nature of power, authority, and totalitarianism, emphasizing the importance of public life and political action.',
-    keyWorks: ['The Human Condition', 'The Origins of Totalitarianism', 'Eichmann in Jerusalem'],
-    topics: {
-      'power': {
-        stance: 'Power as Action',
-        summary: 'True power arises from people acting together in public spaces. Violence is the opposite of power, not its manifestation.',
-        keyQuote: 'Power corresponds to the human ability not just to act but to act in concert.',
-        context: 'Arendt distinguished between power, authority, strength, force, and violence in political life.'
-      },
-      'society': {
-        stance: 'Vita Activa',
-        summary: 'Human life consists of three activities: labor (biological needs), work (creating durable objects), and action (political engagement).',
-        context: 'Arendt warned against the decline of public life and the rise of social conformity in modern societies.'
-      }
-    }
-  },
-  {
-    id: 'william-james',
-    name: 'William James',
-    lifespan: '1842-1910',
-    school: 'Pragmatism',
-    nationality: 'American',
-    biography: 'Psychologist and philosopher who founded American pragmatism, emphasizing the practical consequences of beliefs and ideas.',
-    keyWorks: ['The Will to Believe', 'Pragmatism', 'The Varieties of Religious Experience'],
-    topics: {
-      'truth': {
-        stance: 'Pragmatic Truth',
-        summary: 'Truth is what works in practice. Ideas become true through successful application and verification in experience.',
-        keyQuote: 'The ultimate test for us of what a truth means is the conduct it dictates or inspires.',
-        context: 'James rejected correspondence theories of truth in favor of instrumental and experiential approaches.'
-      },
-      'god': {
-        stance: 'Religious Experience',
-        summary: 'Religious beliefs should be judged by their practical effects on human life rather than their doctrinal content.',
-        context: 'James studied mystical experiences and argued for the legitimacy of personal religious insight.'
-      }
-    }
-  },
-  {
-    id: 'mary-wollstonecraft',
-    name: 'Mary Wollstonecraft',
-    lifespan: '1759-1797',
-    school: 'Enlightenment Feminism',
-    nationality: 'English',
-    biography: 'Pioneering feminist philosopher who argued for women\'s equality in education and society, laying groundwork for modern feminist thought.',
-    keyWorks: ['A Vindication of the Rights of Woman', 'A Vindication of the Rights of Men', 'Letters Written in Sweden'],
-    topics: {
-      'freedom': {
-        stance: 'Women\'s Rights',
-        summary: 'Women deserve equal rights to education, economic independence, and political participation. Social inequality stems from unjust institutions.',
-        keyQuote: 'It is justice, not charity, that is wanting in the world.',
-        context: 'Wollstonecraft challenged the notion that women are naturally inferior and argued for social reform.'
-      },
-      'virtue': {
-        stance: 'Rational Virtue',
-        summary: 'Both men and women can develop virtue through reason and education. Virtue should not be gendered or class-based.',
-        context: 'She criticized contemporary ideals of feminine virtue as artificially constructed and limiting.'
-      }
-    }
-  },
-  {
-    id: 'plotinus',
-    name: 'Plotinus',
-    lifespan: '204-270 CE',
-    school: 'Neoplatonism',
-    nationality: 'Greek-Egyptian',
-    biography: 'Founder of Neoplatonism, Plotinus developed a systematic metaphysics centered on the One as the ultimate source of all reality.',
-    keyWorks: ['The Enneads'],
-    topics: {
-      'reality': {
-        stance: 'Emanation from the One',
-        summary: 'All reality emanates from the One through successive levels: the One, Intellect, and Soul. The goal is return to unity with the One.',
-        keyQuote: 'The One is perfect because it seeks nothing, has nothing, and needs nothing.',
-        context: 'Plotinus influenced both Christian theology and Islamic philosophy through his metaphysical system.'
-      },
-      'enlightenment': {
-        stance: 'Mystical Union',
-        summary: 'The highest form of knowledge is direct, mystical union with the One, transcending rational thought.',
-        context: 'Plotinus reported having mystical experiences of unity with the ultimate reality.'
-      }
-    }
-  },
-  {
-    id: 'ibn-khaldun',
-    name: 'Ibn Khaldun',
-    lifespan: '1332-1406',
-    school: 'Islamic Philosophy',
-    nationality: 'Arab',
-    biography: 'Pioneering historian and social scientist who developed theories of social cohesion, economic cycles, and historical change.',
-    keyWorks: ['The Muqaddimah', 'Kitab al-Ibar'],
-    topics: {
-      'society': {
-        stance: 'Social Cohesion',
-        summary: 'Societies rise and fall in cycles based on group solidarity (asabiyyah). Urban civilization leads to luxury and eventual decay.',
-        keyQuote: 'Geography is destiny.',
-        context: 'Ibn Khaldun developed one of the first systematic theories of social and economic development.'
-      },
-      'change': {
-        stance: 'Cyclical History',
-        summary: 'Historical change follows predictable patterns of rise, flourishing, and decline based on social and economic factors.',
-        context: 'His analysis of historical cycles influenced later philosophers of history and sociologists.'
-      }
-    }
-  },
-  {
-    id: 'dogen',
-    name: 'Dōgen Zenji',
-    lifespan: '1200-1253',
-    school: 'Zen Buddhism',
-    nationality: 'Japanese',
-    biography: 'Founder of Sōtō Zen in Japan, Dōgen emphasized the practice of "just sitting" (shikantaza) as both means and end of enlightenment.',
-    keyWorks: ['Shōbōgenzō', 'Eihei Kōroku', 'Fukan Zazengi'],
-    topics: {
-      'enlightenment': {
-        stance: 'Practice-Enlightenment',
-        summary: 'Practice and enlightenment are one. Sitting meditation is not a means to enlightenment but the expression of Buddha-nature itself.',
-        keyQuote: 'To study the Buddha way is to study the self. To study the self is to forget the self.',
-        context: 'Dōgen rejected the idea that enlightenment is something to be attained, emphasizing present-moment awakeness.'
-      },
-      'time': {
-        stance: 'Being-Time',
-        summary: 'Time and being are inseparable. Each moment of time is a complete expression of all being.',
-        context: 'Dōgen\'s philosophy of time influenced both Buddhist practice and philosophical discussions of temporality.'
-      }
-    }
-  },
-  {
-    id: 'al-ghazali',
-    name: 'Al-Ghazali',
-    lifespan: '1058-1111',
-    school: 'Islamic Philosophy',
-    nationality: 'Persian',
-    biography: 'Influential Islamic theologian and mystic who critiqued Aristotelian philosophy and emphasized direct spiritual experience.',
-    keyWorks: ['The Revival of the Religious Sciences', 'The Incoherence of the Philosophers', 'The Deliverance from Error'],
-    topics: {
-      'knowledge-truth': {
-        stance: 'Limits of Reason',
-        summary: 'Reason has limits and must be supplemented by direct spiritual experience and divine revelation for ultimate truth.',
-        keyQuote: 'Remember often the destroyer of pleasures: death.',
-        context: 'Al-Ghazali experienced a spiritual crisis that led him to emphasize mystical knowledge over philosophical reasoning.'
-      },
-      'god': {
-        stance: 'Divine Occasionalism',
-        summary: 'God is the only true cause. What appears as natural causation is actually God\'s continuous creative action.',
-        context: 'This doctrine preserved divine sovereignty while explaining natural regularities.'
-      }
-    }
-  },
-  {
-    id: 'parmenides',
-    name: 'Parmenides',
-    lifespan: '515-450 BCE',
-    school: 'Pre-Socratic Philosophy',
-    nationality: 'Greek',
-    biography: 'Pre-Socratic philosopher who argued that reality is one, eternal, and unchanging, influencing later metaphysical thought.',
-    keyWorks: ['On Nature'],
-    topics: {
-      'reality': {
-        stance: 'Eternal Being',
-        summary: 'True reality is one, eternal, indivisible, and unchanging. Change and plurality are illusions of the senses.',
-        keyQuote: 'What is, is. What is not, is not.',
-        context: 'Parmenides distinguished between the "Way of Truth" (rational understanding) and the "Way of Opinion" (sensory illusion).'
-      },
-      'change': {
-        stance: 'Denial of Change',
-        summary: 'Change is logically impossible. What exists cannot come from non-existence, nor can it cease to exist.',
-        context: 'This paradox influenced later philosophers including Plato and created the problem of reconciling reason with experience.'
-      }
-    }
-  },
-  {
-    id: 'heraclitus',
-    name: 'Heraclitus',
-    lifespan: '535-475 BCE',
-    school: 'Pre-Socratic Philosophy',
-    nationality: 'Greek',
-    biography: 'Known as the "Dark Philosopher," Heraclitus taught that change is the fundamental nature of reality and that opposites are unified.',
-    keyWorks: ['On Nature (fragments)'],
-    topics: {
-      'change': {
-        stance: 'Universal Flux',
-        summary: 'Everything flows and changes constantly. You cannot step into the same river twice because it is not the same river and you are not the same person.',
-        keyQuote: 'No man ever steps in the same river twice.',
-        context: 'Heraclitus saw change as the fundamental principle that gives order and meaning to the cosmos.'
-      },
-      'reality': {
-        stance: 'Unity of Opposites',
-        summary: 'Opposites are unified in a deeper harmony. Conflict and tension are necessary for the existence of all things.',
-        keyQuote: 'The path up and down are one and the same.',
-        context: 'This doctrine influenced dialectical thinking throughout the history of philosophy.'
-      }
-    }
-  },
-  {
-    id: 'thich-nhat-hanh',
-    name: 'Thích Nhất Hạnh',
-    lifespan: '1926-2022',
-    school: 'Engaged Buddhism',
-    nationality: 'Vietnamese',
-    biography: 'Zen master and peace activist who developed the concept of "Engaged Buddhism," applying mindfulness to social and political issues.',
-    keyWorks: ['The Miracle of Mindfulness', 'Peace Is Every Step', 'Being Peace'],
-    topics: {
-      'consciousness': {
-        stance: 'Mindful Living',
-        summary: 'Consciousness is cultivated through mindful awareness in daily activities. Each moment offers an opportunity for awakening.',
-        keyQuote: 'The present moment is the only time over which we have dominion.',
-        context: 'Thích Nhất Hạnh made Buddhist mindfulness accessible to Western audiences while maintaining its depth.'
-      },
-      'love': {
-        stance: 'Compassionate Understanding',
-        summary: 'True love includes understanding, compassion, and the recognition of interconnectedness with all beings.',
-        context: 'He taught that understanding suffering leads to compassion, which is the foundation of true love.'
-      }
-    }
-  },
-  {
-    id: 'socrates',
-    name: 'Socrates',
-    lifespan: '470-399 BCE',
-    school: 'Classical Greek Philosophy',
-    nationality: 'Greek',
-    biography: 'The founder of Western philosophical tradition, known for his method of questioning and his claim that "the unexamined life is not worth living."',
-    keyWorks: ['None written (known through Plato\'s dialogues)'],
-    topics: {
-      'wisdom': {
-        stance: 'Knowing Nothing',
-        summary: 'True wisdom begins with recognizing the extent of one\'s ignorance. "I know that I know nothing."',
-        keyQuote: 'I know that I know nothing.',
-        context: 'Socratic ignorance was a starting point for philosophical inquiry rather than skepticism.'
-      },
-      'virtue': {
-        stance: 'Virtue as Knowledge',
-        summary: 'Virtue is knowledge, and no one does wrong willingly. If people truly understood good and evil, they would always choose good.',
-        context: 'This intellectualist approach to ethics influenced much of subsequent Western moral philosophy.'
+        stance: 'Determinism',
+        summary: 'Everything follows necessarily from the nature of God/Nature. Freedom comes from understanding necessity, not from the ability to do otherwise.',
+        context: 'Spinoza argued that the feeling of free will is an illusion arising from our ignorance of the causes of our actions.'
       }
     }
   },
@@ -1230,50 +586,6 @@ export const philosophers: Philosopher[] = [
     }
   },
   {
-    id: 'rousseau',
-    name: 'Jean-Jacques Rousseau',
-    lifespan: '1712-1778',
-    school: 'Enlightenment',
-    nationality: 'Genevan',
-    biography: 'Influential political philosopher who argued that humans are naturally good but corrupted by civilization.',
-    keyWorks: ['The Social Contract', 'Emile', 'Discourse on Inequality'],
-    topics: {
-      'society': {
-        stance: 'Social Contract',
-        summary: 'Legitimate government arises from a social contract where people surrender natural freedom for civil liberty under the general will.',
-        keyQuote: 'Man is born free, and everywhere he is in chains.',
-        context: 'Rousseau\'s concept of the general will influenced democratic theory and the French Revolution.'
-      },
-      'freedom': {
-        stance: 'Natural Freedom vs Civil Liberty',
-        summary: 'Natural freedom is unlimited but insecure; civil liberty is limited but protected by law and collective will.',
-        context: 'This distinction became fundamental to liberal political theory.'
-      }
-    }
-  },
-  {
-    id: 'voltaire',
-    name: 'Voltaire (François-Marie Arouet)',
-    lifespan: '1694-1778',
-    school: 'Enlightenment',
-    nationality: 'French',
-    biography: 'Champion of civil liberties, freedom of speech, and separation of church and state during the French Enlightenment.',
-    keyWorks: ['Candide', 'Letters on England', 'Treatise on Tolerance'],
-    topics: {
-      'freedom': {
-        stance: 'Civil Liberties',
-        summary: 'Freedom of speech, religion, and thought are essential human rights that must be protected from tyranny.',
-        keyQuote: 'I disapprove of what you say, but I will defend to the death your right to say it.',
-        context: 'Voltaire\'s advocacy influenced the development of modern concepts of human rights and religious tolerance.'
-      },
-      'evil': {
-        stance: 'Problem of Evil',
-        summary: 'The existence of evil and suffering challenges simple optimistic theodicies. We must work to reduce suffering without illusions.',
-        context: 'Candide satirized Leibnizian optimism about "the best of all possible worlds."'
-      }
-    }
-  },
-  {
     id: 'marx',
     name: 'Karl Marx',
     lifespan: '1818-1883',
@@ -1296,6 +608,61 @@ export const philosophers: Philosopher[] = [
     }
   },
   {
+    id: 'kierkegaard',
+    name: 'Søren Kierkegaard',
+    lifespan: '1813-1855',
+    school: 'Existentialism',
+    nationality: 'Danish',
+    biography: 'Often called the father of existentialism, Kierkegaard emphasized the importance of individual existence, passion, and the leap of faith.',
+    keyWorks: ['Fear and Trembling', 'Either/Or', 'The Sickness Unto Death'],
+    topics: {
+      'meaning-purpose': {
+        stance: 'Leap of Faith',
+        summary: 'Authentic existence requires passionate commitment beyond rational justification. We must choose ourselves through decisive action.',
+        context: 'Kierkegaard criticized both systematic philosophy and conventional Christianity for avoiding the personal challenge of existence.'
+      },
+      'free-will': {
+        stance: 'Radical Choice',
+        summary: 'Freedom involves making choices that define who we are. Anxiety arises from our confrontation with unlimited possibilities.',
+        context: 'Kierkegaard analyzed anxiety as the dizziness of freedom when facing the abyss of possibility.'
+      }
+    }
+  },
+  {
+    id: 'voltaire',
+    name: 'Voltaire (François-Marie Arouet)',
+    lifespan: '1694-1778',
+    school: 'Enlightenment',
+    nationality: 'French',
+    biography: 'Champion of civil liberties, freedom of speech, and separation of church and state during the French Enlightenment.',
+    keyWorks: ['Candide', 'Letters on England', 'Treatise on Tolerance'],
+    topics: {
+      'freedom': {
+        stance: 'Civil Liberties',
+        summary: 'Freedom of speech, religion, and thought are essential human rights that must be protected from tyranny.',
+        keyQuote: 'I disapprove of what you say, but I will defend to the death your right to say it.',
+        context: 'Voltaire\'s advocacy influenced the development of modern concepts of human rights and religious tolerance.'
+      }
+    }
+  },
+  {
+    id: 'rousseau',
+    name: 'Jean-Jacques Rousseau',
+    lifespan: '1712-1778',
+    school: 'Enlightenment',
+    nationality: 'Genevan',
+    biography: 'Influential political philosopher who argued that humans are naturally good but corrupted by civilization.',
+    keyWorks: ['The Social Contract', 'Emile', 'Discourse on Inequality'],
+    topics: {
+      'society': {
+        stance: 'Social Contract',
+        summary: 'Legitimate government arises from a social contract where people surrender natural freedom for civil liberty under the general will.',
+        keyQuote: 'Man is born free, and everywhere he is in chains.',
+        context: 'Rousseau\'s concept of the general will influenced democratic theory and the French Revolution.'
+      }
+    }
+  },
+  {
     id: 'hobbes',
     name: 'Thomas Hobbes',
     lifespan: '1588-1679',
@@ -1309,519 +676,7 @@ export const philosophers: Philosopher[] = [
         summary: 'Rational individuals agree to surrender natural rights to a sovereign power to escape the war of all against all.',
         keyQuote: 'The life of man, solitary, poor, nasty, brutish, and short.',
         context: 'Hobbes argued for absolute sovereignty as the only way to ensure peace and security.'
-      },
-      'power': {
-        stance: 'Sovereign Authority',
-        summary: 'Political authority must be absolute and indivisible to effectively maintain order and prevent civil war.',
-        context: 'This view contrasted sharply with later liberal theories of limited government.'
-      }
-    }
-  },
-  {
-    id: 'pascal',
-    name: 'Blaise Pascal',
-    lifespan: '1623-1662',
-    school: 'Christian Philosophy',
-    nationality: 'French',
-    biography: 'Mathematician and religious philosopher who developed Pascal\'s Wager and explored the relationship between reason and faith.',
-    keyWorks: ['Pensées', 'Provincial Letters'],
-    topics: {
-      'god': {
-        stance: 'Pascal\'s Wager',
-        summary: 'It is rational to believe in God because the potential infinite gain outweighs any finite loss if God exists.',
-        keyQuote: 'The heart has its reasons which reason knows nothing of.',
-        context: 'Pascal argued that reason alone is insufficient for religious belief; faith involves the heart as well.'
-      },
-      'meaning-purpose': {
-        stance: 'Human Grandeur and Misery',
-        summary: 'Humans are caught between greatness (reason, imagination) and wretchedness (mortality, ignorance). Only God can resolve this paradox.',
-        context: 'Pascal saw human nature as fundamentally contradictory without divine grace.'
-      }
-    }
-  },
-  {
-    id: 'dewey',
-    name: 'John Dewey',
-    lifespan: '1859-1952',
-    school: 'Pragmatism',
-    nationality: 'American',
-    biography: 'Leading pragmatist philosopher who emphasized experience, experimentation, and democratic participation in philosophy and education.',
-    keyWorks: ['Democracy and Education', 'Experience and Nature', 'The Quest for Certainty'],
-    topics: {
-      'knowledge-truth': {
-        stance: 'Experimentalism',
-        summary: 'Knowledge is provisional and must be tested through experience and experimentation. Truth is what works in practice.',
-        keyQuote: 'We do not learn from experience... we learn from reflecting on experience.',
-        context: 'Dewey rejected traditional epistemology in favor of learning through problem-solving and inquiry.'
-      },
-      'society': {
-        stance: 'Democratic Education',
-        summary: 'Democracy is a way of life requiring educated citizens capable of critical thinking and collaborative problem-solving.',
-        context: 'Dewey\'s educational philosophy emphasized hands-on learning and preparation for democratic citizenship.'
-      }
-    }
-  },
-  {
-    id: 'bentham',
-    name: 'Jeremy Bentham',
-    lifespan: '1748-1832',
-    school: 'Utilitarianism',
-    nationality: 'English',
-    biography: 'Founder of modern utilitarianism who developed the principle of "the greatest happiness for the greatest number."',
-    keyWorks: ['Introduction to the Principles of Morals and Legislation', 'The Panopticon'],
-    topics: {
-      'ethics-foundation': {
-        stance: 'Hedonistic Calculus',
-        summary: 'Actions are right when they maximize pleasure and minimize pain for the greatest number. Moral calculation is possible.',
-        keyQuote: 'It is the greatest good to the greatest number of people which is the measure of right and wrong.',
-        context: 'Bentham developed detailed methods for calculating and comparing pleasures and pains.'
-      },
-      'justice': {
-        stance: 'Legal Reform',
-        summary: 'Laws and institutions should be reformed based on their consequences for human happiness rather than tradition.',
-        context: 'Bentham was a major advocate for prison reform, animal rights, and legal codification.'
-      }
-    }
-  },
-  {
-    id: 'russell',
-    name: 'Bertrand Russell',
-    lifespan: '1872-1970',
-    school: 'Analytic Philosophy',
-    nationality: 'British',
-    biography: 'Mathematician and philosopher who made fundamental contributions to logic, philosophy of mathematics, and analytic philosophy.',
-    keyWorks: ['Principia Mathematica', 'The Problems of Philosophy', 'Why I Am Not a Christian'],
-    topics: {
-      'knowledge-truth': {
-        stance: 'Logical Analysis',
-        summary: 'Philosophy should use logical analysis to clarify concepts and eliminate confusions caused by ordinary language.',
-        keyQuote: 'The point of philosophy is to start with something so simple as not to seem worth stating, and to end with something so paradoxical that no one will believe it.',
-        context: 'Russell helped establish analytic philosophy as a dominant approach in the English-speaking world.'
-      },
-      'god': {
-        stance: 'Religious Skepticism',
-        summary: 'There is insufficient evidence for God\'s existence, and religious belief often impedes rational inquiry and moral progress.',
-        context: 'Russell was a prominent atheist and critic of organized religion throughout his career.'
-      }
-    }
-  },
-  {
-    id: 'merleau-ponty',
-    name: 'Maurice Merleau-Ponty',
-    lifespan: '1908-1961',
-    school: 'Phenomenology',
-    nationality: 'French',
-    biography: 'Phenomenologist who emphasized the role of the body in perception and developed an existential account of embodied experience.',
-    keyWorks: ['Phenomenology of Perception', 'The Visible and the Invisible', 'The Structure of Behavior'],
-    topics: {
-      'consciousness': {
-        stance: 'Embodied Consciousness',
-        summary: 'Consciousness is always embodied consciousness. We know the world through our lived bodily experience, not through detached mental representations.',
-        keyQuote: 'The body is our general medium for having a world.',
-        context: 'Merleau-Ponty rejected Cartesian dualism in favor of an embodied understanding of mind and world.'
-      },
-      'mind-body': {
-        stance: 'Embodied Phenomenology',
-        summary: 'Mind and body are not separate substances but aspects of unified embodied existence in the world.',
-        context: 'This approach influenced cognitive science, psychology, and theories of artificial intelligence.'
-      }
-    }
-  },
-  {
-    id: 'husserl',
-    name: 'Edmund Husserl',
-    lifespan: '1859-1938',
-    school: 'Phenomenology',
-    nationality: 'German',
-    biography: 'Founder of phenomenology who developed methods for investigating the structures of experience and consciousness.',
-    keyWorks: ['Logical Investigations', 'Ideas', 'The Crisis of European Sciences'],
-    topics: {
-      'consciousness': {
-        stance: 'Phenomenological Analysis',
-        summary: 'Consciousness is always consciousness "of" something (intentionality). We must study consciousness as it appears to itself.',
-        keyQuote: 'All consciousness is consciousness of something.',
-        context: 'Husserl developed the phenomenological reduction to study pure consciousness without metaphysical assumptions.'
-      },
-      'knowledge-truth': {
-        stance: 'Return to Things Themselves',
-        summary: 'Philosophy should return to direct investigation of phenomena as they appear to consciousness, without theoretical presuppositions.',
-        context: 'This approach influenced existentialism, hermeneutics, and continental philosophy generally.'
-      }
-    }
-  },
-  {
-    id: 'heidegger',
-    name: 'Martin Heidegger',
-    lifespan: '1889-1976',
-    school: 'Existential Phenomenology',
-    nationality: 'German',
-    biography: 'Influential phenomenologist who investigated the question of Being and developed fundamental ontology based on human existence (Dasein).',
-    keyWorks: ['Being and Time', 'The Origin of the Work of Art', 'What is Metaphysics?'],
-    topics: {
-      'reality': {
-        stance: 'Being and Time',
-        summary: 'Being is not a thing but the horizon within which beings appear. Human existence (Dasein) has a privileged access to Being.',
-        keyQuote: 'Being is the most universal concept, and yet the most empty.',
-        context: 'Heidegger sought to overcome the metaphysical tradition by returning to the question of Being itself.'
-      },
-      'authenticity': {
-        stance: 'Authentic Existence',
-        summary: 'Authentic existence involves owning one\'s possibilities and confronting one\'s mortality rather than losing oneself in everyday conformity.',
-        context: 'Heidegger analyzed how most people flee from anxiety about death into inauthentic social roles.'
-      }
-    }
-  },
-  {
-    id: 'levinas',
-    name: 'Emmanuel Levinas',
-    lifespan: '1906-1995',
-    school: 'Phenomenology',
-    nationality: 'French-Lithuanian',
-    biography: 'Phenomenologist who developed an ethics based on the face-to-face encounter with the Other as the foundation of responsibility.',
-    keyWorks: ['Totality and Infinity', 'Otherwise than Being', 'Difficult Freedom'],
-    topics: {
-      'ethics-foundation': {
-        stance: 'Ethics as First Philosophy',
-        summary: 'Ethics precedes ontology. The face-to-face encounter with the Other creates infinite responsibility and calls the self into question.',
-        keyQuote: 'The face opens the primordial discourse whose first word is obligation.',
-        context: 'Levinas developed this ethics in response to the Holocaust and as a critique of Western philosophy\'s focus on totality.'
-      },
-      'god': {
-        stance: 'Trace of the Infinite',
-        summary: 'God appears not as a being but as the trace of the infinite in the face of the Other who calls us to responsibility.',
-        context: 'This approach influenced both religious and secular discussions of ethics and responsibility.'
-      }
-    }
-  },
-  {
-    id: 'derrida',
-    name: 'Jacques Derrida',
-    lifespan: '1930-2004',
-    school: 'Poststructuralism',
-    nationality: 'French',
-    biography: 'Developed deconstruction as a method of reading texts that reveals their internal contradictions and unstable meanings.',
-    keyWorks: ['Of Grammatology', 'Writing and Difference', 'Margins of Philosophy'],
-    topics: {
-      'language': {
-        stance: 'Deconstruction',
-        summary: 'Language is characterized by différance - meaning is always deferred and differs from itself. Texts contain contradictions that undermine stable meaning.',
-        keyQuote: 'There is nothing outside the text.',
-        context: 'Derrida challenged traditional notions of fixed meaning, presence, and metaphysical foundations.'
-      },
-      'truth': {
-        stance: 'Critique of Presence',
-        summary: 'The Western philosophical tradition is based on a "metaphysics of presence" that can be deconstructed to reveal its instability.',
-        context: 'This approach influenced literary theory, law, architecture, and various fields beyond philosophy.'
-      }
-    }
-  },
-  {
-    id: 'gadamer',
-    name: 'Hans-Georg Gadamer',
-    lifespan: '1900-2002',
-    school: 'Hermeneutics',
-    nationality: 'German',
-    biography: 'Leading philosophical hermeneuticist who developed theories of understanding, interpretation, and the fusion of horizons.',
-    keyWorks: ['Truth and Method', 'Philosophical Hermeneutics'],
-    topics: {
-      'knowledge-truth': {
-        stance: 'Hermeneutical Understanding',
-        summary: 'All understanding involves interpretation within historical and cultural contexts. Truth emerges through dialogue and fusion of horizons.',
-        keyQuote: 'Understanding is, essentially, a historically effected event.',
-        context: 'Gadamer argued against scientific methodological approaches to humanistic understanding.'
-      },
-      'language': {
-        stance: 'Linguistic Nature of Being',
-        summary: 'Language is not just a tool but the medium in which understanding and being occur. Reality is linguistically constituted.',
-        context: 'This "linguistic turn" influenced how we think about interpretation in humanities and social sciences.'
-      }
-    }
-  },
-  {
-    id: 'habermas',
-    name: 'Jürgen Habermas',
-    lifespan: '1929-present',
-    school: 'Critical Theory',
-    nationality: 'German',
-    biography: 'Major social theorist who developed theories of communicative action and discourse ethics, bridging continental and analytic philosophy.',
-    keyWorks: ['The Theory of Communicative Action', 'Between Facts and Norms', 'The Philosophical Discourse of Modernity'],
-    topics: {
-      'society': {
-        stance: 'Communicative Action',
-        summary: 'Society is coordinated through communicative action aimed at mutual understanding, not just strategic manipulation.',
-        keyQuote: 'The validity of norms rests on the approval of all concerned in a practical discourse.',
-        context: 'Habermas developed this theory to explain social cooperation and democratic legitimacy.'
-      },
-      'ethics-foundation': {
-        stance: 'Discourse Ethics',
-        summary: 'Moral norms are valid when they could be agreed to by all affected parties in an ideal speech situation.',
-        context: 'This approach attempts to ground ethics in the presuppositions of rational communication.'
-      }
-    }
-  },
-  {
-    id: 'adorno',
-    name: 'Theodor W. Adorno',
-    lifespan: '1903-1969',
-    school: 'Critical Theory',
-    nationality: 'German',
-    biography: 'Member of the Frankfurt School who developed dialectical critique of Enlightenment rationality and modern culture industry.',
-    keyWorks: ['Dialectic of Enlightenment', 'Negative Dialectics', 'Aesthetic Theory'],
-    topics: {
-      'society': {
-        stance: 'Critique of Instrumental Reason',
-        summary: 'Modern society reduces reason to mere instrumental calculation, leading to domination of nature and humans.',
-        keyQuote: 'The Culture Industry not so much adapts to the reactions of its customers as it counterfeits them.',
-        context: 'Adorno analyzed how mass culture manipulates consciousness and prevents critical thinking.'
-      },
-      'beauty': {
-        stance: 'Aesthetic Theory',
-        summary: 'Authentic art maintains utopian potential by preserving what society has damaged or forgotten.',
-        context: 'Adorno saw modernist art as a form of resistance to social conformity and instrumental rationality.'
-      }
-    }
-  },
-  {
-    id: 'benjamin',
-    name: 'Walter Benjamin',
-    lifespan: '1892-1940',
-    school: 'Critical Theory',
-    nationality: 'German',
-    biography: 'Cultural critic and theorist who explored the intersection of politics, aesthetics, and technology in modern life.',
-    keyWorks: ['The Work of Art in the Age of Mechanical Reproduction', 'Theses on the Philosophy of History', 'The Arcades Project'],
-    topics: {
-      'beauty': {
-        stance: 'Aura and Reproduction',
-        summary: 'Mechanical reproduction destroys the "aura" of original artworks but also democratizes access to cultural experience.',
-        keyQuote: 'That which withers in the age of mechanical reproduction is the aura of the work of art.',
-        context: 'Benjamin analyzed how technology transforms both art and politics in the modern era.'
-      },
-      'time': {
-        stance: 'Messianic Time',
-        summary: 'History is not progress but catastrophe. Revolutionary moments can blast open the continuum of history.',
-        context: 'Benjamin developed this philosophy of history in response to fascism and failed revolutions.'
-      }
-    }
-  },
-  {
-    id: 'arendt',
-    name: 'Hannah Arendt',
-    lifespan: '1906-1975',
-    school: 'Political Theory',
-    nationality: 'German-American',
-    biography: 'Political theorist who analyzed totalitarianism, the human condition, and the nature of political action.',
-    keyWorks: ['The Origins of Totalitarianism', 'The Human Condition', 'Eichmann in Jerusalem'],
-    topics: {
-      'power': {
-        stance: 'Power vs Violence',
-        summary: 'Power emerges when people act together; violence is its opposite. Totalitarianism destroys the spaces for genuine political action.',
-        keyQuote: 'Power corresponds to the human ability not just to act but to act in concert.',
-        context: 'Arendt distinguished power from strength, force, authority, and violence in political analysis.'
-      },
-      'evil': {
-        stance: 'Banality of Evil',
-        summary: 'Great evil can result from thoughtlessness and conformity rather than demonic intentions.',
-        context: 'This insight emerged from her analysis of Adolf Eichmann\'s trial and the Holocaust.'
-      }
-    }
-  },
-  {
-    id: 'beauvoir',
-    name: 'Simone de Beauvoir',
-    lifespan: '1908-1986',
-    school: 'Existentialist Feminism',
-    nationality: 'French',
-    biography: 'Existentialist philosopher and pioneering feminist who analyzed women\'s oppression and the construction of gender.',
-    keyWorks: ['The Second Sex', 'The Ethics of Ambiguity', 'She Came to Stay'],
-    topics: {
-      'freedom': {
-        stance: 'Gendered Freedom',
-        summary: 'Women\'s freedom is constrained by social structures that define them as the "Other" in relation to male subjects.',
-        keyQuote: 'One is not born, but rather becomes, a woman.',
-        context: 'De Beauvoir applied existentialist concepts to analyze how gender is socially constructed rather than natural.'
-      },
-      'authenticity': {
-        stance: 'Situated Ethics',
-        summary: 'Authentic existence must acknowledge the concrete situations that shape possibilities for freedom.',
-        context: 'She developed existentialist ethics that takes account of social and material conditions.'
-      }
-    }
-  },
-  {
-    id: 'butler',
-    name: 'Judith Butler',
-    lifespan: '1956-present',
-    school: 'Poststructuralist Feminism',
-    nationality: 'American',
-    biography: 'Influential gender theorist who developed performativity theory and queer theory approaches to identity and power.',
-    keyWorks: ['Gender Trouble', 'Bodies That Matter', 'Frames of War'],
-    topics: {
-      'identity': {
-        stance: 'Performativity',
-        summary: 'Gender identity is performatively constituted through repeated acts rather than being a stable essence.',
-        keyQuote: 'Gender is not something one is, it is something one does.',
-        context: 'Butler\'s theory challenged both traditional gender roles and some feminist assumptions about women\'s identity.'
-      },
-      'power': {
-        stance: 'Discursive Power',
-        summary: 'Power operates through discourse to constitute subjects and make certain forms of life livable or unlivable.',
-        context: 'This analysis draws on Foucault while developing new insights into gender, sexuality, and identity.'
-      }
-    }
-  },
-  {
-    id: 'said',
-    name: 'Edward Said',
-    lifespan: '1935-2003',
-    school: 'Postcolonial Theory',
-    nationality: 'Palestinian-American',
-    biography: 'Literary critic and theorist who developed influential analyses of Orientalism and postcolonial power relations.',
-    keyWorks: ['Orientalism', 'Culture and Imperialism', 'The Question of Palestine'],
-    topics: {
-      'knowledge-truth': {
-        stance: 'Orientalism',
-        summary: 'Western knowledge about the East is shaped by power relations and serves imperial interests rather than objective understanding.',
-        keyQuote: 'Every domain of knowledge about the Orient is a domain of power.',
-        context: 'Said showed how seemingly objective scholarship can reinforce colonial domination.'
-      },
-      'identity': {
-        stance: 'Contrapuntal Reading',
-        summary: 'Cultural identity must be understood in relation to imperial history and ongoing power relations between cultures.',
-        context: 'This approach influenced how we read literature, culture, and history in postcolonial contexts.'
-      }
-    }
-  },
-  {
-    id: 'hooks',
-    name: 'bell hooks',
-    lifespan: '1952-2021',
-    school: 'Feminist Theory',
-    nationality: 'American',
-    biography: 'Feminist theorist who developed intersectional analyses of race, gender, class, and education from a critical pedagogy perspective.',
-    keyWorks: ['Ain\'t I a Woman?', 'Teaching to Transgress', 'All About Love'],
-    topics: {
-      'love': {
-        stance: 'Revolutionary Love',
-        summary: 'Love is a political act that challenges domination and creates conditions for justice and liberation.',
-        keyQuote: 'Love is an action, never simply a feeling.',
-        context: 'hooks connected personal transformation with social justice through an ethic of love.'
-      },
-      'freedom': {
-        stance: 'Intersectional Liberation',
-        summary: 'Freedom requires addressing interconnected systems of oppression based on race, gender, class, and other differences.',
-        context: 'She developed accessible theories that connect academic feminism with grassroots activism.'
-      }
-    }
-  },
-  {
-    id: 'fanon',
-    name: 'Frantz Fanon',
-    lifespan: '1925-1961',
-    school: 'Postcolonial Theory',
-    nationality: 'Martinican',
-    biography: 'Psychiatrist and revolutionary theorist who analyzed the psychological effects of colonization and racism.',
-    keyWorks: ['Black Skin, White Masks', 'The Wretched of the Earth'],
-    topics: {
-      'identity': {
-        stance: 'Colonial Psychology',
-        summary: 'Colonialism creates psychological damage by imposing racialized identities that internalize inferiority.',
-        keyQuote: 'The black man wants to be white. The white man slaves to reach a human level.',
-        context: 'Fanon analyzed how racism operates through psychological as well as political mechanisms.'
-      },
-      'freedom': {
-        stance: 'Decolonization',
-        summary: 'Liberation from colonial domination requires both psychological and political transformation through struggle.',
-        context: 'Fanon\'s work influenced liberation movements and critical race theory.'
-      }
-    }
-  },
-  {
-    id: 'spivak',
-    name: 'Gayatri Chakravorty Spivak',
-    lifespan: '1942-present',
-    school: 'Postcolonial Theory',
-    nationality: 'Indian-American',
-    biography: 'Literary theorist who developed deconstructive approaches to postcolonialism and feminist theory.',
-    keyWorks: ['Can the Subaltern Speak?', 'A Critique of Postcolonial Reason', 'Death of a Discipline'],
-    topics: {
-      'knowledge-truth': {
-        stance: 'Epistemic Violence',
-        summary: 'Colonial and neocolonial power operates through "epistemic violence" that silences subaltern voices and ways of knowing.',
-        keyQuote: 'The subaltern cannot speak.',
-        context: 'Spivak analyzed how marginalized peoples are excluded from dominant modes of representation and knowledge production.'
-      },
-      'identity': {
-        stance: 'Strategic Essentialism',
-        summary: 'Oppressed groups may strategically use essentialist identity categories for political purposes while recognizing their constructed nature.',
-        context: 'This concept addresses tensions between poststructuralist theory and political activism.'
-      }
-    }
-  },
-  {
-    id: 'chomsky',
-    name: 'Noam Chomsky',
-    lifespan: '1928-present',
-    school: 'Linguistics/Political Theory',
-    nationality: 'American',
-    biography: 'Linguist and political activist who revolutionized the study of language and developed influential critiques of media and foreign policy.',
-    keyWorks: ['Syntactic Structures', 'Manufacturing Consent', 'Language and Mind'],
-    topics: {
-      'language': {
-        stance: 'Universal Grammar',
-        summary: 'Humans have innate linguistic capacities that enable language acquisition. Language is a species-specific biological endowment.',
-        keyQuote: 'Language is a process of free creation.',
-        context: 'Chomsky\'s linguistic theory challenged behaviorist approaches and influenced cognitive science.'
-      },
-      'power': {
-        stance: 'Manufacturing Consent',
-        summary: 'Mass media serves elite interests by filtering information and shaping public opinion to support existing power structures.',
-        context: 'Chomsky combined linguistic expertise with political activism and media criticism.'
-      }
-    }
-  },
-  {
-    id: 'dennett',
-    name: 'Daniel Dennett',
-    lifespan: '1942-present',
-    school: 'Philosophy of Mind',
-    nationality: 'American',
-    biography: 'Prominent philosopher of mind who developed materialist theories of consciousness, free will, and evolution.',
-    keyWorks: ['Consciousness Explained', 'Darwin\'s Dangerous Idea', 'Freedom Evolves'],
-    topics: {
-      'consciousness': {
-        stance: 'Multiple Drafts Model',
-        summary: 'Consciousness is not a central theater but distributed information processing without a unified observer.',
-        keyQuote: 'We are evolved organic robots.',
-        context: 'Dennett argues against both dualism and qualia-based theories of consciousness.'
-      },
-      'free-will': {
-        stance: 'Compatibilist Freedom',
-        summary: 'Free will is compatible with determinism when properly understood as the evolution of flexible, rational agency.',
-        context: 'He argues that the kind of free will worth having is the kind we actually can have.'
-      }
-    }
-  },
-  {
-    id: 'nagel',
-    name: 'Thomas Nagel',
-    lifespan: '1937-present',
-    school: 'Analytic Philosophy',
-    nationality: 'American',
-    biography: 'Influential moral and political philosopher who has written extensively on consciousness, objectivity, and the limits of reductionism.',
-    keyWorks: ['What Is It Like to Be a Bat?', 'The View from Nowhere', 'Mind and Cosmos'],
-    topics: {
-      'consciousness': {
-        stance: 'Hard Problem',
-        summary: 'Consciousness poses a fundamental challenge to physicalism because subjective experience cannot be fully explained by objective science.',
-        keyQuote: 'Consciousness is the most conspicuous obstacle to a comprehensive naturalism.',
-        context: 'Nagel\'s work on consciousness influenced discussions about the explanatory gap and the hard problem of consciousness.'
-      },
-      'ethics-foundation': {
-        stance: 'Objective Ethics',
-        summary: 'Moral truths can be objective even if they cannot be reduced to natural facts. Ethics involves both subjective and objective perspectives.',
-        context: 'Nagel argues against both moral relativism and simple naturalistic reductionism in ethics.'
       }
     }
   }
-];
 ];
