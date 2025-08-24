@@ -1,1 +1,62 @@
-/* This is where custom CSS goes */
+@import 'tailwindcss';
+@import "tw-animate-css";
+
+@layer base {
+  * {
+    @apply border-border
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .font-reading {
+    font-family: 'Crimson Text', serif;
+  }
+}
+
+:root {
+  /* Warm earth tones inspired by classical learning */
+  --background: oklch(0.95 0.02 85); /* Warm cream */
+  --foreground: oklch(0.25 0.01 20); /* Charcoal */
+
+  --card: oklch(0.98 0 0); /* Pure white */
+  --card-foreground: oklch(0.25 0.01 20); /* Charcoal */
+  --popover: oklch(0.98 0 0);
+  --popover-foreground: oklch(0.25 0.01 20);
+
+  /* Deep sage green as primary - wisdom and contemplation */
+  --primary: oklch(0.45 0.08 150); 
+  --primary-foreground: oklch(0.98 0 0);
+  
+  /* Light sage for secondary elements */
+  --secondary: oklch(0.88 0.04 150); 
+  --secondary-foreground: oklch(0.25 0.01 20);
+  
+  --muted: oklch(0.92 0.02 85); /* Very light cream */
+  --muted-foreground: oklch(0.45 0.01 20); /* Medium gray */
+  
+  /* Rich amber accent for highlights and CTAs */
+  --accent: oklch(0.65 0.12 75);
+  --accent-foreground: oklch(0.98 0 0);
+  
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  --border: oklch(0.85 0.02 85); /* Soft cream border */
+  --input: oklch(0.85 0.02 85);
+  --ring: oklch(0.45 0.08 150); /* Same as primary */
+
+  --radius: 0.5rem;
+  
+  /* Chart colors using the earth tone palette */
+  --chart-1: oklch(0.45 0.08 150);
+  --chart-2: oklch(0.65 0.12 75);
+  --chart-3: oklch(0.35 0.06 180);
+  --chart-4: oklch(0.55 0.10 45);
+  --chart-5: oklch(0.75 0.08 120);
+}
