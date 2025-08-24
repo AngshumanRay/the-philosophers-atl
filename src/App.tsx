@@ -43,7 +43,7 @@ function HomeView({ onNavigate }: HomeViewProps) {
       {/* Header */}
       <div className="text-center mb-12">
         <h1 className="font-display text-5xl font-bold text-foreground mb-4">
-          The Philosopher's Atlas
+          Philosophers Atlas
         </h1>
         <p className="text-xl text-muted-foreground font-reading max-w-2xl mx-auto leading-relaxed">
           Explore the vast landscape of philosophical thought through an interactive journey 
