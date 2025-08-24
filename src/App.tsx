@@ -1,15 +1,14 @@
 import { useState } from 'react';
-import { Book, Scale, Users, UserPlus } from '@phosphor-icons/react';
+import { Book, Scale, Users } from '@phosphor-icons/react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { PhilosopherDirectory } from './components/PhilosopherDirectory';
 import { TopicExplorer } from './components/TopicExplorer';
 import { ComparisonTool } from './components/ComparisonTool';
-import { SignUpForm } from './components/SignUpForm';
 import { philosophers, topics } from '@/lib/data';
 
-type View = 'home' | 'philosophers' | 'topics' | 'compare' | 'signup';
+type View = 'home' | 'philosophers' | 'topics' | 'compare';
 
 function App() {
   const [currentView, setCurrentView] = useState<View>('home');
@@ -22,8 +21,6 @@ function App() {
         return <TopicExplorer onBack={() => setCurrentView('home')} />;
       case 'compare':
         return <ComparisonTool onBack={() => setCurrentView('home')} />;
-      case 'signup':
-        return <SignUpForm onBack={() => setCurrentView('home')} />;
       default:
         return <HomeView onNavigate={setCurrentView} />;
     }
@@ -44,17 +41,7 @@ function HomeView({ onNavigate }: HomeViewProps) {
   return (
     <div className="container mx-auto px-4 py-8 max-w-6xl">
       {/* Header */}
-      <div className="text-center mb-12 relative">
-        <div className="absolute top-0 right-0">
-          <Button 
-            onClick={() => onNavigate('signup')}
-            className="flex items-center gap-2"
-            size="sm"
-          >
-            <UserPlus size={16} />
-            Join the Journey
-          </Button>
-        </div>
+      <div className="text-center mb-12">
         <h1 className="font-display text-5xl font-bold text-foreground mb-4">
           The Philosopher's Atlas
         </h1>

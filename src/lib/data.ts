@@ -1184,5 +1184,644 @@ export const philosophers: Philosopher[] = [
         context: 'He taught that understanding suffering leads to compassion, which is the foundation of true love.'
       }
     }
+  },
+  {
+    id: 'socrates',
+    name: 'Socrates',
+    lifespan: '470-399 BCE',
+    school: 'Classical Greek Philosophy',
+    nationality: 'Greek',
+    biography: 'The founder of Western philosophical tradition, known for his method of questioning and his claim that "the unexamined life is not worth living."',
+    keyWorks: ['None written (known through Plato\'s dialogues)'],
+    topics: {
+      'wisdom': {
+        stance: 'Knowing Nothing',
+        summary: 'True wisdom begins with recognizing the extent of one\'s ignorance. "I know that I know nothing."',
+        keyQuote: 'I know that I know nothing.',
+        context: 'Socratic ignorance was a starting point for philosophical inquiry rather than skepticism.'
+      },
+      'virtue': {
+        stance: 'Virtue as Knowledge',
+        summary: 'Virtue is knowledge, and no one does wrong willingly. If people truly understood good and evil, they would always choose good.',
+        context: 'This intellectualist approach to ethics influenced much of subsequent Western moral philosophy.'
+      }
+    }
+  },
+  {
+    id: 'hegel',
+    name: 'Georg Wilhelm Friedrich Hegel',
+    lifespan: '1770-1831',
+    school: 'German Idealism',
+    nationality: 'German',
+    biography: 'Developed a comprehensive philosophical system based on dialectical reasoning and the progressive development of Absolute Spirit.',
+    keyWorks: ['Phenomenology of Spirit', 'Logic', 'Philosophy of Right'],
+    topics: {
+      'reality': {
+        stance: 'Absolute Idealism',
+        summary: 'Reality is the progressive self-realization of Absolute Spirit through dialectical development in history.',
+        keyQuote: 'The real is rational and the rational is real.',
+        context: 'Hegel saw history as the gradual unfolding of freedom and self-consciousness.'
+      },
+      'change': {
+        stance: 'Dialectical Process',
+        summary: 'All development occurs through dialectical contradiction: thesis, antithesis, and synthesis.',
+        context: 'Hegelian dialectics influenced both Marxism and existentialism.'
+      }
+    }
+  },
+  {
+    id: 'rousseau',
+    name: 'Jean-Jacques Rousseau',
+    lifespan: '1712-1778',
+    school: 'Enlightenment',
+    nationality: 'Genevan',
+    biography: 'Influential political philosopher who argued that humans are naturally good but corrupted by civilization.',
+    keyWorks: ['The Social Contract', 'Emile', 'Discourse on Inequality'],
+    topics: {
+      'society': {
+        stance: 'Social Contract',
+        summary: 'Legitimate government arises from a social contract where people surrender natural freedom for civil liberty under the general will.',
+        keyQuote: 'Man is born free, and everywhere he is in chains.',
+        context: 'Rousseau\'s concept of the general will influenced democratic theory and the French Revolution.'
+      },
+      'freedom': {
+        stance: 'Natural Freedom vs Civil Liberty',
+        summary: 'Natural freedom is unlimited but insecure; civil liberty is limited but protected by law and collective will.',
+        context: 'This distinction became fundamental to liberal political theory.'
+      }
+    }
+  },
+  {
+    id: 'voltaire',
+    name: 'Voltaire (François-Marie Arouet)',
+    lifespan: '1694-1778',
+    school: 'Enlightenment',
+    nationality: 'French',
+    biography: 'Champion of civil liberties, freedom of speech, and separation of church and state during the French Enlightenment.',
+    keyWorks: ['Candide', 'Letters on England', 'Treatise on Tolerance'],
+    topics: {
+      'freedom': {
+        stance: 'Civil Liberties',
+        summary: 'Freedom of speech, religion, and thought are essential human rights that must be protected from tyranny.',
+        keyQuote: 'I disapprove of what you say, but I will defend to the death your right to say it.',
+        context: 'Voltaire\'s advocacy influenced the development of modern concepts of human rights and religious tolerance.'
+      },
+      'evil': {
+        stance: 'Problem of Evil',
+        summary: 'The existence of evil and suffering challenges simple optimistic theodicies. We must work to reduce suffering without illusions.',
+        context: 'Candide satirized Leibnizian optimism about "the best of all possible worlds."'
+      }
+    }
+  },
+  {
+    id: 'marx',
+    name: 'Karl Marx',
+    lifespan: '1818-1883',
+    school: 'German Philosophy/Political Economy',
+    nationality: 'German',
+    biography: 'Revolutionary thinker who analyzed capitalism and predicted its eventual replacement by communism through class struggle.',
+    keyWorks: ['Das Kapital', 'The Communist Manifesto', 'The German Ideology'],
+    topics: {
+      'society': {
+        stance: 'Historical Materialism',
+        summary: 'Society develops through class struggle driven by economic forces. The ruling class controls the means of production.',
+        keyQuote: 'The philosophers have only interpreted the world; the point is to change it.',
+        context: 'Marx combined Hegelian dialectics with materialist analysis of economic structures.'
+      },
+      'freedom': {
+        stance: 'Liberation through Revolution',
+        summary: 'True freedom requires eliminating economic exploitation and class oppression through revolutionary transformation.',
+        context: 'Marx saw capitalism as a necessary stage toward eventual communist freedom.'
+      }
+    }
+  },
+  {
+    id: 'hobbes',
+    name: 'Thomas Hobbes',
+    lifespan: '1588-1679',
+    school: 'Political Philosophy',
+    nationality: 'English',
+    biography: 'Developed social contract theory based on the premise that life in the state of nature would be "solitary, poor, nasty, brutish, and short."',
+    keyWorks: ['Leviathan', 'De Cive', 'Elements of Law'],
+    topics: {
+      'society': {
+        stance: 'Social Contract',
+        summary: 'Rational individuals agree to surrender natural rights to a sovereign power to escape the war of all against all.',
+        keyQuote: 'The life of man, solitary, poor, nasty, brutish, and short.',
+        context: 'Hobbes argued for absolute sovereignty as the only way to ensure peace and security.'
+      },
+      'power': {
+        stance: 'Sovereign Authority',
+        summary: 'Political authority must be absolute and indivisible to effectively maintain order and prevent civil war.',
+        context: 'This view contrasted sharply with later liberal theories of limited government.'
+      }
+    }
+  },
+  {
+    id: 'pascal',
+    name: 'Blaise Pascal',
+    lifespan: '1623-1662',
+    school: 'Christian Philosophy',
+    nationality: 'French',
+    biography: 'Mathematician and religious philosopher who developed Pascal\'s Wager and explored the relationship between reason and faith.',
+    keyWorks: ['Pensées', 'Provincial Letters'],
+    topics: {
+      'god': {
+        stance: 'Pascal\'s Wager',
+        summary: 'It is rational to believe in God because the potential infinite gain outweighs any finite loss if God exists.',
+        keyQuote: 'The heart has its reasons which reason knows nothing of.',
+        context: 'Pascal argued that reason alone is insufficient for religious belief; faith involves the heart as well.'
+      },
+      'meaning-purpose': {
+        stance: 'Human Grandeur and Misery',
+        summary: 'Humans are caught between greatness (reason, imagination) and wretchedness (mortality, ignorance). Only God can resolve this paradox.',
+        context: 'Pascal saw human nature as fundamentally contradictory without divine grace.'
+      }
+    }
+  },
+  {
+    id: 'dewey',
+    name: 'John Dewey',
+    lifespan: '1859-1952',
+    school: 'Pragmatism',
+    nationality: 'American',
+    biography: 'Leading pragmatist philosopher who emphasized experience, experimentation, and democratic participation in philosophy and education.',
+    keyWorks: ['Democracy and Education', 'Experience and Nature', 'The Quest for Certainty'],
+    topics: {
+      'knowledge-truth': {
+        stance: 'Experimentalism',
+        summary: 'Knowledge is provisional and must be tested through experience and experimentation. Truth is what works in practice.',
+        keyQuote: 'We do not learn from experience... we learn from reflecting on experience.',
+        context: 'Dewey rejected traditional epistemology in favor of learning through problem-solving and inquiry.'
+      },
+      'society': {
+        stance: 'Democratic Education',
+        summary: 'Democracy is a way of life requiring educated citizens capable of critical thinking and collaborative problem-solving.',
+        context: 'Dewey\'s educational philosophy emphasized hands-on learning and preparation for democratic citizenship.'
+      }
+    }
+  },
+  {
+    id: 'bentham',
+    name: 'Jeremy Bentham',
+    lifespan: '1748-1832',
+    school: 'Utilitarianism',
+    nationality: 'English',
+    biography: 'Founder of modern utilitarianism who developed the principle of "the greatest happiness for the greatest number."',
+    keyWorks: ['Introduction to the Principles of Morals and Legislation', 'The Panopticon'],
+    topics: {
+      'ethics-foundation': {
+        stance: 'Hedonistic Calculus',
+        summary: 'Actions are right when they maximize pleasure and minimize pain for the greatest number. Moral calculation is possible.',
+        keyQuote: 'It is the greatest good to the greatest number of people which is the measure of right and wrong.',
+        context: 'Bentham developed detailed methods for calculating and comparing pleasures and pains.'
+      },
+      'justice': {
+        stance: 'Legal Reform',
+        summary: 'Laws and institutions should be reformed based on their consequences for human happiness rather than tradition.',
+        context: 'Bentham was a major advocate for prison reform, animal rights, and legal codification.'
+      }
+    }
+  },
+  {
+    id: 'russell',
+    name: 'Bertrand Russell',
+    lifespan: '1872-1970',
+    school: 'Analytic Philosophy',
+    nationality: 'British',
+    biography: 'Mathematician and philosopher who made fundamental contributions to logic, philosophy of mathematics, and analytic philosophy.',
+    keyWorks: ['Principia Mathematica', 'The Problems of Philosophy', 'Why I Am Not a Christian'],
+    topics: {
+      'knowledge-truth': {
+        stance: 'Logical Analysis',
+        summary: 'Philosophy should use logical analysis to clarify concepts and eliminate confusions caused by ordinary language.',
+        keyQuote: 'The point of philosophy is to start with something so simple as not to seem worth stating, and to end with something so paradoxical that no one will believe it.',
+        context: 'Russell helped establish analytic philosophy as a dominant approach in the English-speaking world.'
+      },
+      'god': {
+        stance: 'Religious Skepticism',
+        summary: 'There is insufficient evidence for God\'s existence, and religious belief often impedes rational inquiry and moral progress.',
+        context: 'Russell was a prominent atheist and critic of organized religion throughout his career.'
+      }
+    }
+  },
+  {
+    id: 'merleau-ponty',
+    name: 'Maurice Merleau-Ponty',
+    lifespan: '1908-1961',
+    school: 'Phenomenology',
+    nationality: 'French',
+    biography: 'Phenomenologist who emphasized the role of the body in perception and developed an existential account of embodied experience.',
+    keyWorks: ['Phenomenology of Perception', 'The Visible and the Invisible', 'The Structure of Behavior'],
+    topics: {
+      'consciousness': {
+        stance: 'Embodied Consciousness',
+        summary: 'Consciousness is always embodied consciousness. We know the world through our lived bodily experience, not through detached mental representations.',
+        keyQuote: 'The body is our general medium for having a world.',
+        context: 'Merleau-Ponty rejected Cartesian dualism in favor of an embodied understanding of mind and world.'
+      },
+      'mind-body': {
+        stance: 'Embodied Phenomenology',
+        summary: 'Mind and body are not separate substances but aspects of unified embodied existence in the world.',
+        context: 'This approach influenced cognitive science, psychology, and theories of artificial intelligence.'
+      }
+    }
+  },
+  {
+    id: 'husserl',
+    name: 'Edmund Husserl',
+    lifespan: '1859-1938',
+    school: 'Phenomenology',
+    nationality: 'German',
+    biography: 'Founder of phenomenology who developed methods for investigating the structures of experience and consciousness.',
+    keyWorks: ['Logical Investigations', 'Ideas', 'The Crisis of European Sciences'],
+    topics: {
+      'consciousness': {
+        stance: 'Phenomenological Analysis',
+        summary: 'Consciousness is always consciousness "of" something (intentionality). We must study consciousness as it appears to itself.',
+        keyQuote: 'All consciousness is consciousness of something.',
+        context: 'Husserl developed the phenomenological reduction to study pure consciousness without metaphysical assumptions.'
+      },
+      'knowledge-truth': {
+        stance: 'Return to Things Themselves',
+        summary: 'Philosophy should return to direct investigation of phenomena as they appear to consciousness, without theoretical presuppositions.',
+        context: 'This approach influenced existentialism, hermeneutics, and continental philosophy generally.'
+      }
+    }
+  },
+  {
+    id: 'heidegger',
+    name: 'Martin Heidegger',
+    lifespan: '1889-1976',
+    school: 'Existential Phenomenology',
+    nationality: 'German',
+    biography: 'Influential phenomenologist who investigated the question of Being and developed fundamental ontology based on human existence (Dasein).',
+    keyWorks: ['Being and Time', 'The Origin of the Work of Art', 'What is Metaphysics?'],
+    topics: {
+      'reality': {
+        stance: 'Being and Time',
+        summary: 'Being is not a thing but the horizon within which beings appear. Human existence (Dasein) has a privileged access to Being.',
+        keyQuote: 'Being is the most universal concept, and yet the most empty.',
+        context: 'Heidegger sought to overcome the metaphysical tradition by returning to the question of Being itself.'
+      },
+      'authenticity': {
+        stance: 'Authentic Existence',
+        summary: 'Authentic existence involves owning one\'s possibilities and confronting one\'s mortality rather than losing oneself in everyday conformity.',
+        context: 'Heidegger analyzed how most people flee from anxiety about death into inauthentic social roles.'
+      }
+    }
+  },
+  {
+    id: 'levinas',
+    name: 'Emmanuel Levinas',
+    lifespan: '1906-1995',
+    school: 'Phenomenology',
+    nationality: 'French-Lithuanian',
+    biography: 'Phenomenologist who developed an ethics based on the face-to-face encounter with the Other as the foundation of responsibility.',
+    keyWorks: ['Totality and Infinity', 'Otherwise than Being', 'Difficult Freedom'],
+    topics: {
+      'ethics-foundation': {
+        stance: 'Ethics as First Philosophy',
+        summary: 'Ethics precedes ontology. The face-to-face encounter with the Other creates infinite responsibility and calls the self into question.',
+        keyQuote: 'The face opens the primordial discourse whose first word is obligation.',
+        context: 'Levinas developed this ethics in response to the Holocaust and as a critique of Western philosophy\'s focus on totality.'
+      },
+      'god': {
+        stance: 'Trace of the Infinite',
+        summary: 'God appears not as a being but as the trace of the infinite in the face of the Other who calls us to responsibility.',
+        context: 'This approach influenced both religious and secular discussions of ethics and responsibility.'
+      }
+    }
+  },
+  {
+    id: 'derrida',
+    name: 'Jacques Derrida',
+    lifespan: '1930-2004',
+    school: 'Poststructuralism',
+    nationality: 'French',
+    biography: 'Developed deconstruction as a method of reading texts that reveals their internal contradictions and unstable meanings.',
+    keyWorks: ['Of Grammatology', 'Writing and Difference', 'Margins of Philosophy'],
+    topics: {
+      'language': {
+        stance: 'Deconstruction',
+        summary: 'Language is characterized by différance - meaning is always deferred and differs from itself. Texts contain contradictions that undermine stable meaning.',
+        keyQuote: 'There is nothing outside the text.',
+        context: 'Derrida challenged traditional notions of fixed meaning, presence, and metaphysical foundations.'
+      },
+      'truth': {
+        stance: 'Critique of Presence',
+        summary: 'The Western philosophical tradition is based on a "metaphysics of presence" that can be deconstructed to reveal its instability.',
+        context: 'This approach influenced literary theory, law, architecture, and various fields beyond philosophy.'
+      }
+    }
+  },
+  {
+    id: 'gadamer',
+    name: 'Hans-Georg Gadamer',
+    lifespan: '1900-2002',
+    school: 'Hermeneutics',
+    nationality: 'German',
+    biography: 'Leading philosophical hermeneuticist who developed theories of understanding, interpretation, and the fusion of horizons.',
+    keyWorks: ['Truth and Method', 'Philosophical Hermeneutics'],
+    topics: {
+      'knowledge-truth': {
+        stance: 'Hermeneutical Understanding',
+        summary: 'All understanding involves interpretation within historical and cultural contexts. Truth emerges through dialogue and fusion of horizons.',
+        keyQuote: 'Understanding is, essentially, a historically effected event.',
+        context: 'Gadamer argued against scientific methodological approaches to humanistic understanding.'
+      },
+      'language': {
+        stance: 'Linguistic Nature of Being',
+        summary: 'Language is not just a tool but the medium in which understanding and being occur. Reality is linguistically constituted.',
+        context: 'This "linguistic turn" influenced how we think about interpretation in humanities and social sciences.'
+      }
+    }
+  },
+  {
+    id: 'habermas',
+    name: 'Jürgen Habermas',
+    lifespan: '1929-present',
+    school: 'Critical Theory',
+    nationality: 'German',
+    biography: 'Major social theorist who developed theories of communicative action and discourse ethics, bridging continental and analytic philosophy.',
+    keyWorks: ['The Theory of Communicative Action', 'Between Facts and Norms', 'The Philosophical Discourse of Modernity'],
+    topics: {
+      'society': {
+        stance: 'Communicative Action',
+        summary: 'Society is coordinated through communicative action aimed at mutual understanding, not just strategic manipulation.',
+        keyQuote: 'The validity of norms rests on the approval of all concerned in a practical discourse.',
+        context: 'Habermas developed this theory to explain social cooperation and democratic legitimacy.'
+      },
+      'ethics-foundation': {
+        stance: 'Discourse Ethics',
+        summary: 'Moral norms are valid when they could be agreed to by all affected parties in an ideal speech situation.',
+        context: 'This approach attempts to ground ethics in the presuppositions of rational communication.'
+      }
+    }
+  },
+  {
+    id: 'adorno',
+    name: 'Theodor W. Adorno',
+    lifespan: '1903-1969',
+    school: 'Critical Theory',
+    nationality: 'German',
+    biography: 'Member of the Frankfurt School who developed dialectical critique of Enlightenment rationality and modern culture industry.',
+    keyWorks: ['Dialectic of Enlightenment', 'Negative Dialectics', 'Aesthetic Theory'],
+    topics: {
+      'society': {
+        stance: 'Critique of Instrumental Reason',
+        summary: 'Modern society reduces reason to mere instrumental calculation, leading to domination of nature and humans.',
+        keyQuote: 'The Culture Industry not so much adapts to the reactions of its customers as it counterfeits them.',
+        context: 'Adorno analyzed how mass culture manipulates consciousness and prevents critical thinking.'
+      },
+      'beauty': {
+        stance: 'Aesthetic Theory',
+        summary: 'Authentic art maintains utopian potential by preserving what society has damaged or forgotten.',
+        context: 'Adorno saw modernist art as a form of resistance to social conformity and instrumental rationality.'
+      }
+    }
+  },
+  {
+    id: 'benjamin',
+    name: 'Walter Benjamin',
+    lifespan: '1892-1940',
+    school: 'Critical Theory',
+    nationality: 'German',
+    biography: 'Cultural critic and theorist who explored the intersection of politics, aesthetics, and technology in modern life.',
+    keyWorks: ['The Work of Art in the Age of Mechanical Reproduction', 'Theses on the Philosophy of History', 'The Arcades Project'],
+    topics: {
+      'beauty': {
+        stance: 'Aura and Reproduction',
+        summary: 'Mechanical reproduction destroys the "aura" of original artworks but also democratizes access to cultural experience.',
+        keyQuote: 'That which withers in the age of mechanical reproduction is the aura of the work of art.',
+        context: 'Benjamin analyzed how technology transforms both art and politics in the modern era.'
+      },
+      'time': {
+        stance: 'Messianic Time',
+        summary: 'History is not progress but catastrophe. Revolutionary moments can blast open the continuum of history.',
+        context: 'Benjamin developed this philosophy of history in response to fascism and failed revolutions.'
+      }
+    }
+  },
+  {
+    id: 'arendt',
+    name: 'Hannah Arendt',
+    lifespan: '1906-1975',
+    school: 'Political Theory',
+    nationality: 'German-American',
+    biography: 'Political theorist who analyzed totalitarianism, the human condition, and the nature of political action.',
+    keyWorks: ['The Origins of Totalitarianism', 'The Human Condition', 'Eichmann in Jerusalem'],
+    topics: {
+      'power': {
+        stance: 'Power vs Violence',
+        summary: 'Power emerges when people act together; violence is its opposite. Totalitarianism destroys the spaces for genuine political action.',
+        keyQuote: 'Power corresponds to the human ability not just to act but to act in concert.',
+        context: 'Arendt distinguished power from strength, force, authority, and violence in political analysis.'
+      },
+      'evil': {
+        stance: 'Banality of Evil',
+        summary: 'Great evil can result from thoughtlessness and conformity rather than demonic intentions.',
+        context: 'This insight emerged from her analysis of Adolf Eichmann\'s trial and the Holocaust.'
+      }
+    }
+  },
+  {
+    id: 'beauvoir',
+    name: 'Simone de Beauvoir',
+    lifespan: '1908-1986',
+    school: 'Existentialist Feminism',
+    nationality: 'French',
+    biography: 'Existentialist philosopher and pioneering feminist who analyzed women\'s oppression and the construction of gender.',
+    keyWorks: ['The Second Sex', 'The Ethics of Ambiguity', 'She Came to Stay'],
+    topics: {
+      'freedom': {
+        stance: 'Gendered Freedom',
+        summary: 'Women\'s freedom is constrained by social structures that define them as the "Other" in relation to male subjects.',
+        keyQuote: 'One is not born, but rather becomes, a woman.',
+        context: 'De Beauvoir applied existentialist concepts to analyze how gender is socially constructed rather than natural.'
+      },
+      'authenticity': {
+        stance: 'Situated Ethics',
+        summary: 'Authentic existence must acknowledge the concrete situations that shape possibilities for freedom.',
+        context: 'She developed existentialist ethics that takes account of social and material conditions.'
+      }
+    }
+  },
+  {
+    id: 'butler',
+    name: 'Judith Butler',
+    lifespan: '1956-present',
+    school: 'Poststructuralist Feminism',
+    nationality: 'American',
+    biography: 'Influential gender theorist who developed performativity theory and queer theory approaches to identity and power.',
+    keyWorks: ['Gender Trouble', 'Bodies That Matter', 'Frames of War'],
+    topics: {
+      'identity': {
+        stance: 'Performativity',
+        summary: 'Gender identity is performatively constituted through repeated acts rather than being a stable essence.',
+        keyQuote: 'Gender is not something one is, it is something one does.',
+        context: 'Butler\'s theory challenged both traditional gender roles and some feminist assumptions about women\'s identity.'
+      },
+      'power': {
+        stance: 'Discursive Power',
+        summary: 'Power operates through discourse to constitute subjects and make certain forms of life livable or unlivable.',
+        context: 'This analysis draws on Foucault while developing new insights into gender, sexuality, and identity.'
+      }
+    }
+  },
+  {
+    id: 'said',
+    name: 'Edward Said',
+    lifespan: '1935-2003',
+    school: 'Postcolonial Theory',
+    nationality: 'Palestinian-American',
+    biography: 'Literary critic and theorist who developed influential analyses of Orientalism and postcolonial power relations.',
+    keyWorks: ['Orientalism', 'Culture and Imperialism', 'The Question of Palestine'],
+    topics: {
+      'knowledge-truth': {
+        stance: 'Orientalism',
+        summary: 'Western knowledge about the East is shaped by power relations and serves imperial interests rather than objective understanding.',
+        keyQuote: 'Every domain of knowledge about the Orient is a domain of power.',
+        context: 'Said showed how seemingly objective scholarship can reinforce colonial domination.'
+      },
+      'identity': {
+        stance: 'Contrapuntal Reading',
+        summary: 'Cultural identity must be understood in relation to imperial history and ongoing power relations between cultures.',
+        context: 'This approach influenced how we read literature, culture, and history in postcolonial contexts.'
+      }
+    }
+  },
+  {
+    id: 'hooks',
+    name: 'bell hooks',
+    lifespan: '1952-2021',
+    school: 'Feminist Theory',
+    nationality: 'American',
+    biography: 'Feminist theorist who developed intersectional analyses of race, gender, class, and education from a critical pedagogy perspective.',
+    keyWorks: ['Ain\'t I a Woman?', 'Teaching to Transgress', 'All About Love'],
+    topics: {
+      'love': {
+        stance: 'Revolutionary Love',
+        summary: 'Love is a political act that challenges domination and creates conditions for justice and liberation.',
+        keyQuote: 'Love is an action, never simply a feeling.',
+        context: 'hooks connected personal transformation with social justice through an ethic of love.'
+      },
+      'freedom': {
+        stance: 'Intersectional Liberation',
+        summary: 'Freedom requires addressing interconnected systems of oppression based on race, gender, class, and other differences.',
+        context: 'She developed accessible theories that connect academic feminism with grassroots activism.'
+      }
+    }
+  },
+  {
+    id: 'fanon',
+    name: 'Frantz Fanon',
+    lifespan: '1925-1961',
+    school: 'Postcolonial Theory',
+    nationality: 'Martinican',
+    biography: 'Psychiatrist and revolutionary theorist who analyzed the psychological effects of colonization and racism.',
+    keyWorks: ['Black Skin, White Masks', 'The Wretched of the Earth'],
+    topics: {
+      'identity': {
+        stance: 'Colonial Psychology',
+        summary: 'Colonialism creates psychological damage by imposing racialized identities that internalize inferiority.',
+        keyQuote: 'The black man wants to be white. The white man slaves to reach a human level.',
+        context: 'Fanon analyzed how racism operates through psychological as well as political mechanisms.'
+      },
+      'freedom': {
+        stance: 'Decolonization',
+        summary: 'Liberation from colonial domination requires both psychological and political transformation through struggle.',
+        context: 'Fanon\'s work influenced liberation movements and critical race theory.'
+      }
+    }
+  },
+  {
+    id: 'spivak',
+    name: 'Gayatri Chakravorty Spivak',
+    lifespan: '1942-present',
+    school: 'Postcolonial Theory',
+    nationality: 'Indian-American',
+    biography: 'Literary theorist who developed deconstructive approaches to postcolonialism and feminist theory.',
+    keyWorks: ['Can the Subaltern Speak?', 'A Critique of Postcolonial Reason', 'Death of a Discipline'],
+    topics: {
+      'knowledge-truth': {
+        stance: 'Epistemic Violence',
+        summary: 'Colonial and neocolonial power operates through "epistemic violence" that silences subaltern voices and ways of knowing.',
+        keyQuote: 'The subaltern cannot speak.',
+        context: 'Spivak analyzed how marginalized peoples are excluded from dominant modes of representation and knowledge production.'
+      },
+      'identity': {
+        stance: 'Strategic Essentialism',
+        summary: 'Oppressed groups may strategically use essentialist identity categories for political purposes while recognizing their constructed nature.',
+        context: 'This concept addresses tensions between poststructuralist theory and political activism.'
+      }
+    }
+  },
+  {
+    id: 'chomsky',
+    name: 'Noam Chomsky',
+    lifespan: '1928-present',
+    school: 'Linguistics/Political Theory',
+    nationality: 'American',
+    biography: 'Linguist and political activist who revolutionized the study of language and developed influential critiques of media and foreign policy.',
+    keyWorks: ['Syntactic Structures', 'Manufacturing Consent', 'Language and Mind'],
+    topics: {
+      'language': {
+        stance: 'Universal Grammar',
+        summary: 'Humans have innate linguistic capacities that enable language acquisition. Language is a species-specific biological endowment.',
+        keyQuote: 'Language is a process of free creation.',
+        context: 'Chomsky\'s linguistic theory challenged behaviorist approaches and influenced cognitive science.'
+      },
+      'power': {
+        stance: 'Manufacturing Consent',
+        summary: 'Mass media serves elite interests by filtering information and shaping public opinion to support existing power structures.',
+        context: 'Chomsky combined linguistic expertise with political activism and media criticism.'
+      }
+    }
+  },
+  {
+    id: 'dennett',
+    name: 'Daniel Dennett',
+    lifespan: '1942-present',
+    school: 'Philosophy of Mind',
+    nationality: 'American',
+    biography: 'Prominent philosopher of mind who developed materialist theories of consciousness, free will, and evolution.',
+    keyWorks: ['Consciousness Explained', 'Darwin\'s Dangerous Idea', 'Freedom Evolves'],
+    topics: {
+      'consciousness': {
+        stance: 'Multiple Drafts Model',
+        summary: 'Consciousness is not a central theater but distributed information processing without a unified observer.',
+        keyQuote: 'We are evolved organic robots.',
+        context: 'Dennett argues against both dualism and qualia-based theories of consciousness.'
+      },
+      'free-will': {
+        stance: 'Compatibilist Freedom',
+        summary: 'Free will is compatible with determinism when properly understood as the evolution of flexible, rational agency.',
+        context: 'He argues that the kind of free will worth having is the kind we actually can have.'
+      }
+    }
+  },
+  {
+    id: 'nagel',
+    name: 'Thomas Nagel',
+    lifespan: '1937-present',
+    school: 'Analytic Philosophy',
+    nationality: 'American',
+    biography: 'Influential moral and political philosopher who has written extensively on consciousness, objectivity, and the limits of reductionism.',
+    keyWorks: ['What Is It Like to Be a Bat?', 'The View from Nowhere', 'Mind and Cosmos'],
+    topics: {
+      'consciousness': {
+        stance: 'Hard Problem',
+        summary: 'Consciousness poses a fundamental challenge to physicalism because subjective experience cannot be fully explained by objective science.',
+        keyQuote: 'Consciousness is the most conspicuous obstacle to a comprehensive naturalism.',
+        context: 'Nagel\'s work on consciousness influenced discussions about the explanatory gap and the hard problem of consciousness.'
+      },
+      'ethics-foundation': {
+        stance: 'Objective Ethics',
+        summary: 'Moral truths can be objective even if they cannot be reduced to natural facts. Ethics involves both subjective and objective perspectives.',
+        context: 'Nagel argues against both moral relativism and simple naturalistic reductionism in ethics.'
+      }
+    }
   }
+];
 ];
