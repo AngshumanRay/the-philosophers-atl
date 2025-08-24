@@ -108,7 +108,7 @@ function HomeView({ onNavigate }: HomeViewProps) {
             <CardDescription className="font-reading">
               See how different philosophers approach the same fundamental questions
             </CardDescription>
-          </CardContent>
+          </CardHeader>
           <CardContent>
             <Badge variant="secondary">Side-by-side Analysis</Badge>
           </CardContent>

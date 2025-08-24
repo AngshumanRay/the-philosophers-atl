@@ -3,7 +3,7 @@
 
 @layer base {
   * {
-    @apply border-border
+    @apply border-stone-300
   }
   
   body {
