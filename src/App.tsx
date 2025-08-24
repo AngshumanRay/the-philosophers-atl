@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import { Book, Scale, Compass, Users, UserPlus } from '@phosphor-icons/react';
+import { Book, Scale, Users, UserPlus } from '@phosphor-icons/react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Separator } from '@/components/ui/separator';
 import { PhilosopherDirectory } from './components/PhilosopherDirectory';
 import { TopicExplorer } from './components/TopicExplorer';
 import { ComparisonTool } from './components/ComparisonTool';
@@ -128,67 +127,7 @@ function HomeView({ onNavigate }: HomeViewProps) {
         </Card>
       </div>
 
-      <Separator className="my-12" />
 
-      {/* Featured Content */}
-      <div className="grid lg:grid-cols-2 gap-8">
-        {/* Featured Philosophers */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="font-display text-2xl flex items-center gap-2">
-              <Compass size={24} className="text-primary" />
-              Begin Your Journey
-            </CardTitle>
-            <CardDescription className="font-reading">
-              Start with these influential thinkers who shaped different eras of philosophy
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            {philosophers.slice(0, 3).map((philosopher) => (
-              <div key={philosopher.id} className="flex items-center gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors">
-                <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full flex items-center justify-center">
-                  <span className="font-display font-semibold text-sm">
-                    {philosopher.name.split(' ').map(n => n[0]).join('')}
-                  </span>
-                </div>
-                <div>
-                  <h4 className="font-display font-medium">{philosopher.name}</h4>
-                  <p className="text-sm text-muted-foreground">{philosopher.lifespan} • {philosopher.school}</p>
-                </div>
-              </div>
-            ))}
-            <Button variant="outline" size="sm" onClick={() => onNavigate('philosophers')} className="w-full">
-              Explore All Philosophers
-            </Button>
-          </CardContent>
-        </Card>
-
-        {/* Featured Topics */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="font-display text-2xl flex items-center gap-2">
-              <Book size={24} className="text-accent" />
-              Essential Questions
-            </CardTitle>
-            <CardDescription className="font-reading">
-              Dive into the fundamental questions that have puzzled humanity for centuries
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            {topics.slice(0, 3).map((topic) => (
-              <div key={topic.id} className="p-3 rounded-lg hover:bg-muted/50 transition-colors">
-                <div className="flex items-center justify-between mb-2">
-                  <h4 className="font-display font-medium">{topic.title}</h4>
-                </div>
-                <p className="text-sm text-muted-foreground font-reading">{topic.description}</p>
-              </div>
-            ))}
-            <Button variant="outline" size="sm" onClick={() => onNavigate('topics')} className="w-full">
-              Explore All Topics
-            </Button>
-          </CardContent>
-        </Card>
-      </div>
     </div>
   );
 }
