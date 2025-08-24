@@ -26,6 +26,24 @@ export interface Topic {
 
 export const topics: Topic[] = [
   {
+    id: 'consciousness',
+    title: 'Consciousness',
+    description: 'What is consciousness? How does subjective experience arise from physical processes?',
+    category: 'metaphysics'
+  },
+  {
+    id: 'suffering',
+    title: 'The Nature of Suffering',
+    description: 'Why do we suffer? Is suffering an inevitable part of existence?',
+    category: 'ethics'
+  },
+  {
+    id: 'meaning-purpose',
+    title: 'Meaning and Purpose',
+    description: 'What gives life meaning and purpose? How should we live a fulfilling life?',
+    category: 'ethics'
+  },
+  {
     id: 'free-will',
     title: 'Free Will vs. Determinism',
     description: 'Do we have genuine choice in our actions, or are all events predetermined?',
@@ -42,24 +60,6 @@ export const topics: Topic[] = [
     title: 'Nature of Knowledge',
     description: 'How do we know what we know? What is truth?',
     category: 'epistemology'
-  },
-  {
-    id: 'meaning-purpose',
-    title: 'Meaning and Purpose',
-    description: 'What gives life meaning and purpose? How should we live a fulfilling life?',
-    category: 'ethics'
-  },
-  {
-    id: 'consciousness',
-    title: 'Consciousness',
-    description: 'What is consciousness? How does subjective experience arise from physical processes?',
-    category: 'metaphysics'
-  },
-  {
-    id: 'suffering',
-    title: 'The Nature of Suffering',
-    description: 'Why do we suffer? Is suffering an inevitable part of existence?',
-    category: 'ethics'
   },
   {
     id: 'mind-body',
@@ -168,6 +168,54 @@ export const topics: Topic[] = [
     title: 'Enlightenment and Awakening',
     description: 'What is spiritual enlightenment? Is there a higher state of consciousness?',
     category: 'spirituality'
+  },
+  {
+    id: 'change',
+    title: 'Change and Permanence',
+    description: 'What is the nature of change? Is anything truly permanent in the universe?',
+    category: 'metaphysics'
+  },
+  {
+    id: 'emotion',
+    title: 'Emotions and Reason',
+    description: 'What role should emotions play in decision-making? How do they relate to rational thought?',
+    category: 'ethics'
+  },
+  {
+    id: 'society',
+    title: 'Individual and Society',
+    description: 'What is our obligation to society? How do we balance individual needs with collective good?',
+    category: 'political'
+  },
+  {
+    id: 'authenticity',
+    title: 'Authenticity and Self',
+    description: 'What does it mean to be authentic? How do we live true to ourselves?',
+    category: 'ethics'
+  },
+  {
+    id: 'power',
+    title: 'Power and Authority',
+    description: 'What legitimizes power? How should authority be exercised in human relationships?',
+    category: 'political'
+  },
+  {
+    id: 'creativity',
+    title: 'Creativity and Innovation',
+    description: 'What is creativity? How do new ideas and artistic expressions emerge?',
+    category: 'aesthetics'
+  },
+  {
+    id: 'nature',
+    title: 'Humanity and Nature',
+    description: 'What is our relationship with the natural world? Are we separate from or part of nature?',
+    category: 'metaphysics'
+  },
+  {
+    id: 'forgiveness',
+    title: 'Forgiveness and Justice',
+    description: 'When should we forgive? How does forgiveness relate to justice and moral responsibility?',
+    category: 'ethics'
   }
 ];
 
@@ -869,7 +917,271 @@ export const philosophers: Philosopher[] = [
       'identity': {
         stance: 'Subject Formation',
         summary: 'Personal identity is not natural but is produced through social practices and power relations.',
-        context: 'Foucault studied how modern institutions create particular kinds of subjects and forms of subjectivity.'
+      }
+    }
+  },
+  {
+    id: 'simone-de-beauvoir',
+    name: 'Simone de Beauvoir',
+    lifespan: '1908-1986',
+    school: 'Existentialism',
+    nationality: 'French',
+    biography: 'French existentialist philosopher, writer, and feminist theorist who wrote extensively about women\'s oppression and the nature of freedom.',
+    keyWorks: ['The Second Sex', 'The Ethics of Ambiguity', 'She Came to Stay'],
+    topics: {
+      'freedom': {
+        stance: 'Situated Freedom',
+        summary: 'Freedom is always situated within social and historical contexts. Women\'s liberation requires both personal and collective transformation.',
+        keyQuote: 'One is not born, but rather becomes, a woman.',
+        context: 'De Beauvoir analyzed how social conditioning limits women\'s freedom and authentic self-realization.'
+      },
+      'authenticity': {
+        stance: 'Ethical Authenticity',
+        summary: 'Authentic existence requires recognizing and assuming one\'s freedom while acknowledging the freedom of others.',
+        context: 'De Beauvoir developed existentialist ethics that emphasizes reciprocal recognition and responsibility.'
+      }
+    }
+  },
+  {
+    id: 'nagarjuna',
+    name: 'Nagarjuna',
+    lifespan: '2nd-3rd century CE',
+    school: 'Madhyamaka Buddhism',
+    nationality: 'Indian',
+    biography: 'Founder of the Madhyamaka (Middle Way) school of Buddhist philosophy, Nagarjuna developed the doctrine of emptiness (sunyata).',
+    keyWorks: ['Fundamental Verses on the Middle Way', 'Vigrahavyavartani', 'Ratnavali'],
+    topics: {
+      'reality': {
+        stance: 'Emptiness (Sunyata)',
+        summary: 'All phenomena are empty of inherent existence and arise through dependent origination. Reality is neither existent nor non-existent.',
+        keyQuote: 'Nothing arises without cause. Nothing arises from causes that are totally unrelated.',
+        context: 'Nagarjuna\'s Middle Way philosophy avoids both eternalism and nihilism through the concept of emptiness.'
+      },
+      'truth': {
+        stance: 'Two Truths',
+        summary: 'There are two levels of truth: conventional truth (worldly understanding) and ultimate truth (emptiness of inherent existence).',
+        context: 'This doctrine allows for practical engagement with the world while maintaining ultimate emptiness.'
+      }
+    }
+  },
+  {
+    id: 'hannah-arendt',
+    name: 'Hannah Arendt',
+    lifespan: '1906-1975',
+    school: 'Political Theory',
+    nationality: 'German-American',
+    biography: 'Political theorist who analyzed the nature of power, authority, and totalitarianism, emphasizing the importance of public life and political action.',
+    keyWorks: ['The Human Condition', 'The Origins of Totalitarianism', 'Eichmann in Jerusalem'],
+    topics: {
+      'power': {
+        stance: 'Power as Action',
+        summary: 'True power arises from people acting together in public spaces. Violence is the opposite of power, not its manifestation.',
+        keyQuote: 'Power corresponds to the human ability not just to act but to act in concert.',
+        context: 'Arendt distinguished between power, authority, strength, force, and violence in political life.'
+      },
+      'society': {
+        stance: 'Vita Activa',
+        summary: 'Human life consists of three activities: labor (biological needs), work (creating durable objects), and action (political engagement).',
+        context: 'Arendt warned against the decline of public life and the rise of social conformity in modern societies.'
+      }
+    }
+  },
+  {
+    id: 'william-james',
+    name: 'William James',
+    lifespan: '1842-1910',
+    school: 'Pragmatism',
+    nationality: 'American',
+    biography: 'Psychologist and philosopher who founded American pragmatism, emphasizing the practical consequences of beliefs and ideas.',
+    keyWorks: ['The Will to Believe', 'Pragmatism', 'The Varieties of Religious Experience'],
+    topics: {
+      'truth': {
+        stance: 'Pragmatic Truth',
+        summary: 'Truth is what works in practice. Ideas become true through successful application and verification in experience.',
+        keyQuote: 'The ultimate test for us of what a truth means is the conduct it dictates or inspires.',
+        context: 'James rejected correspondence theories of truth in favor of instrumental and experiential approaches.'
+      },
+      'god': {
+        stance: 'Religious Experience',
+        summary: 'Religious beliefs should be judged by their practical effects on human life rather than their doctrinal content.',
+        context: 'James studied mystical experiences and argued for the legitimacy of personal religious insight.'
+      }
+    }
+  },
+  {
+    id: 'mary-wollstonecraft',
+    name: 'Mary Wollstonecraft',
+    lifespan: '1759-1797',
+    school: 'Enlightenment Feminism',
+    nationality: 'English',
+    biography: 'Pioneering feminist philosopher who argued for women\'s equality in education and society, laying groundwork for modern feminist thought.',
+    keyWorks: ['A Vindication of the Rights of Woman', 'A Vindication of the Rights of Men', 'Letters Written in Sweden'],
+    topics: {
+      'freedom': {
+        stance: 'Women\'s Rights',
+        summary: 'Women deserve equal rights to education, economic independence, and political participation. Social inequality stems from unjust institutions.',
+        keyQuote: 'It is justice, not charity, that is wanting in the world.',
+        context: 'Wollstonecraft challenged the notion that women are naturally inferior and argued for social reform.'
+      },
+      'virtue': {
+        stance: 'Rational Virtue',
+        summary: 'Both men and women can develop virtue through reason and education. Virtue should not be gendered or class-based.',
+        context: 'She criticized contemporary ideals of feminine virtue as artificially constructed and limiting.'
+      }
+    }
+  },
+  {
+    id: 'plotinus',
+    name: 'Plotinus',
+    lifespan: '204-270 CE',
+    school: 'Neoplatonism',
+    nationality: 'Greek-Egyptian',
+    biography: 'Founder of Neoplatonism, Plotinus developed a systematic metaphysics centered on the One as the ultimate source of all reality.',
+    keyWorks: ['The Enneads'],
+    topics: {
+      'reality': {
+        stance: 'Emanation from the One',
+        summary: 'All reality emanates from the One through successive levels: the One, Intellect, and Soul. The goal is return to unity with the One.',
+        keyQuote: 'The One is perfect because it seeks nothing, has nothing, and needs nothing.',
+        context: 'Plotinus influenced both Christian theology and Islamic philosophy through his metaphysical system.'
+      },
+      'enlightenment': {
+        stance: 'Mystical Union',
+        summary: 'The highest form of knowledge is direct, mystical union with the One, transcending rational thought.',
+        context: 'Plotinus reported having mystical experiences of unity with the ultimate reality.'
+      }
+    }
+  },
+  {
+    id: 'ibn-khaldun',
+    name: 'Ibn Khaldun',
+    lifespan: '1332-1406',
+    school: 'Islamic Philosophy',
+    nationality: 'Arab',
+    biography: 'Pioneering historian and social scientist who developed theories of social cohesion, economic cycles, and historical change.',
+    keyWorks: ['The Muqaddimah', 'Kitab al-Ibar'],
+    topics: {
+      'society': {
+        stance: 'Social Cohesion',
+        summary: 'Societies rise and fall in cycles based on group solidarity (asabiyyah). Urban civilization leads to luxury and eventual decay.',
+        keyQuote: 'Geography is destiny.',
+        context: 'Ibn Khaldun developed one of the first systematic theories of social and economic development.'
+      },
+      'change': {
+        stance: 'Cyclical History',
+        summary: 'Historical change follows predictable patterns of rise, flourishing, and decline based on social and economic factors.',
+        context: 'His analysis of historical cycles influenced later philosophers of history and sociologists.'
+      }
+    }
+  },
+  {
+    id: 'dogen',
+    name: 'Dōgen Zenji',
+    lifespan: '1200-1253',
+    school: 'Zen Buddhism',
+    nationality: 'Japanese',
+    biography: 'Founder of Sōtō Zen in Japan, Dōgen emphasized the practice of "just sitting" (shikantaza) as both means and end of enlightenment.',
+    keyWorks: ['Shōbōgenzō', 'Eihei Kōroku', 'Fukan Zazengi'],
+    topics: {
+      'enlightenment': {
+        stance: 'Practice-Enlightenment',
+        summary: 'Practice and enlightenment are one. Sitting meditation is not a means to enlightenment but the expression of Buddha-nature itself.',
+        keyQuote: 'To study the Buddha way is to study the self. To study the self is to forget the self.',
+        context: 'Dōgen rejected the idea that enlightenment is something to be attained, emphasizing present-moment awakeness.'
+      },
+      'time': {
+        stance: 'Being-Time',
+        summary: 'Time and being are inseparable. Each moment of time is a complete expression of all being.',
+        context: 'Dōgen\'s philosophy of time influenced both Buddhist practice and philosophical discussions of temporality.'
+      }
+    }
+  },
+  {
+    id: 'al-ghazali',
+    name: 'Al-Ghazali',
+    lifespan: '1058-1111',
+    school: 'Islamic Philosophy',
+    nationality: 'Persian',
+    biography: 'Influential Islamic theologian and mystic who critiqued Aristotelian philosophy and emphasized direct spiritual experience.',
+    keyWorks: ['The Revival of the Religious Sciences', 'The Incoherence of the Philosophers', 'The Deliverance from Error'],
+    topics: {
+      'knowledge-truth': {
+        stance: 'Limits of Reason',
+        summary: 'Reason has limits and must be supplemented by direct spiritual experience and divine revelation for ultimate truth.',
+        keyQuote: 'Remember often the destroyer of pleasures: death.',
+        context: 'Al-Ghazali experienced a spiritual crisis that led him to emphasize mystical knowledge over philosophical reasoning.'
+      },
+      'god': {
+        stance: 'Divine Occasionalism',
+        summary: 'God is the only true cause. What appears as natural causation is actually God\'s continuous creative action.',
+        context: 'This doctrine preserved divine sovereignty while explaining natural regularities.'
+      }
+    }
+  },
+  {
+    id: 'parmenides',
+    name: 'Parmenides',
+    lifespan: '515-450 BCE',
+    school: 'Pre-Socratic Philosophy',
+    nationality: 'Greek',
+    biography: 'Pre-Socratic philosopher who argued that reality is one, eternal, and unchanging, influencing later metaphysical thought.',
+    keyWorks: ['On Nature'],
+    topics: {
+      'reality': {
+        stance: 'Eternal Being',
+        summary: 'True reality is one, eternal, indivisible, and unchanging. Change and plurality are illusions of the senses.',
+        keyQuote: 'What is, is. What is not, is not.',
+        context: 'Parmenides distinguished between the "Way of Truth" (rational understanding) and the "Way of Opinion" (sensory illusion).'
+      },
+      'change': {
+        stance: 'Denial of Change',
+        summary: 'Change is logically impossible. What exists cannot come from non-existence, nor can it cease to exist.',
+        context: 'This paradox influenced later philosophers including Plato and created the problem of reconciling reason with experience.'
+      }
+    }
+  },
+  {
+    id: 'heraclitus',
+    name: 'Heraclitus',
+    lifespan: '535-475 BCE',
+    school: 'Pre-Socratic Philosophy',
+    nationality: 'Greek',
+    biography: 'Known as the "Dark Philosopher," Heraclitus taught that change is the fundamental nature of reality and that opposites are unified.',
+    keyWorks: ['On Nature (fragments)'],
+    topics: {
+      'change': {
+        stance: 'Universal Flux',
+        summary: 'Everything flows and changes constantly. You cannot step into the same river twice because it is not the same river and you are not the same person.',
+        keyQuote: 'No man ever steps in the same river twice.',
+        context: 'Heraclitus saw change as the fundamental principle that gives order and meaning to the cosmos.'
+      },
+      'reality': {
+        stance: 'Unity of Opposites',
+        summary: 'Opposites are unified in a deeper harmony. Conflict and tension are necessary for the existence of all things.',
+        keyQuote: 'The path up and down are one and the same.',
+        context: 'This doctrine influenced dialectical thinking throughout the history of philosophy.'
+      }
+    }
+  },
+  {
+    id: 'thich-nhat-hanh',
+    name: 'Thích Nhất Hạnh',
+    lifespan: '1926-2022',
+    school: 'Engaged Buddhism',
+    nationality: 'Vietnamese',
+    biography: 'Zen master and peace activist who developed the concept of "Engaged Buddhism," applying mindfulness to social and political issues.',
+    keyWorks: ['The Miracle of Mindfulness', 'Peace Is Every Step', 'Being Peace'],
+    topics: {
+      'consciousness': {
+        stance: 'Mindful Living',
+        summary: 'Consciousness is cultivated through mindful awareness in daily activities. Each moment offers an opportunity for awakening.',
+        keyQuote: 'The present moment is the only time over which we have dominion.',
+        context: 'Thích Nhất Hạnh made Buddhist mindfulness accessible to Western audiences while maintaining its depth.'
+      },
+      'love': {
+        stance: 'Compassionate Understanding',
+        summary: 'True love includes understanding, compassion, and the recognition of interconnectedness with all beings.',
+        context: 'He taught that understanding suffering leads to compassion, which is the foundation of true love.'
       }
     }
   }
