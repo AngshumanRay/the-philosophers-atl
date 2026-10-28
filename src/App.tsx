@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Book, Scale, Users } from '@phosphor-icons/react';
+import { Book, Scales, Users } from '@phosphor-icons/react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -100,7 +100,7 @@ function HomeView({ onNavigate }: HomeViewProps) {
           <CardHeader className="pb-4">
             <div className="flex items-center gap-3 mb-2">
               <div className="p-2 bg-secondary/20 rounded-lg group-hover:bg-secondary/30 transition-colors">
-                <Scale size={24} className="text-primary" />
+                <Scales size={24} className="text-primary" />
               </div>
               <CardTitle className="font-display text-xl">Compare Views</CardTitle>
             </div>
